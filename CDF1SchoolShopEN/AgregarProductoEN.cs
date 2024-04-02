@@ -8,7 +8,7 @@ namespace CDF1SchoolShopEN
 {
     public class AgregarProductoEN
     {
-        // Hola
+        // Hola que tal
         public int Id { get; set; }
         public string Producto { get; set; }
         public string Cantidad { get; set; }
