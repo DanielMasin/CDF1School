@@ -34,7 +34,7 @@
             proveedoresToolStripMenuItem = new ToolStripMenuItem();
             agregarProveedoresToolStripMenuItem = new ToolStripMenuItem();
             ajustesToolStripMenuItem = new ToolStripMenuItem();
-            cerrarSeccionToolStripMenuItem = new ToolStripMenuItem(); 
+            //cerrarSeccionToolStripMenuItem = new ToolStripMenuItem(); 
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
