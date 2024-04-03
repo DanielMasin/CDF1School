@@ -70,7 +70,7 @@
             // 
             // btnIniciarSeccion
             // 
-            btnIniciarSeccion.Location = new Point(419, 333);
+            btnIniciarSeccion.Location = new Point(413, 326);
             btnIniciarSeccion.Name = "btnIniciarSeccion";
             btnIniciarSeccion.Size = new Size(148, 37);
             btnIniciarSeccion.TabIndex = 4;
@@ -81,9 +81,9 @@
             // btnMostrarContra
             // 
             btnMostrarContra.Image = Properties.Resources.ojoMostrar2;
-            btnMostrarContra.Location = new Point(661, 234);
+            btnMostrarContra.Location = new Point(661, 237);
             btnMostrarContra.Name = "btnMostrarContra";
-            btnMostrarContra.Size = new Size(34, 33);
+            btnMostrarContra.Size = new Size(42, 30);
             btnMostrarContra.TabIndex = 5;
             btnMostrarContra.UseVisualStyleBackColor = true;
             btnMostrarContra.Click += btnMostrarContra_Click;
