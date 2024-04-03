@@ -34,7 +34,7 @@
             proveedoresToolStripMenuItem = new ToolStripMenuItem();
             agregarProveedoresToolStripMenuItem = new ToolStripMenuItem();
             ajustesToolStripMenuItem = new ToolStripMenuItem();
-            cerrarSeccionToolStripMenuItem = new ToolStripMenuItem(); master
+            cerrarSeccionToolStripMenuItem = new ToolStripMenuItem(); 
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -70,7 +70,7 @@
             // 
             // agregarProveedoresToolStripMenuItem
             // 
-            agregarProveedoresToolStripMenuItem.Name = "agregarProveedoresToolStripMenuItem"; master
+            agregarProveedoresToolStripMenuItem.Name = "agregarProveedoresToolStripMenuItem"; 
             // 
             // ajustesToolStripMenuItem
             // 
@@ -82,7 +82,7 @@
             // cerrarSeccionToolStripMenuItem
             // 
             cerrarSeccionToolStripMenuItem.Name = "cerrarSeccionToolStripMenuItem";
- master
+ 
             // SchoolShopMenuWF
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
@@ -92,7 +92,7 @@
             MainMenuStrip = menuStrip1;
             Name = "SchoolShopMenuWF";
             Text = "SchoolShopMenuWF";
-            Load += SchoolShopMenuWF_Load;
+            //Load += SchoolShopMenuWF_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

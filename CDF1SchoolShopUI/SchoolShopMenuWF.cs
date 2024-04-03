@@ -23,7 +23,7 @@ namespace CDF1SchoolShopUI
             AgregarFormulario.Show();
             this.Close();
         }
-            this.Close();
-        }
+            
+        
     }
 }
