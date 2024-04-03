@@ -8,6 +8,6 @@ namespace CDF1SchoolShopEN
 {
     internal class InventarioEN
     {
-
+        public int id { get; set; }
     }
 }
