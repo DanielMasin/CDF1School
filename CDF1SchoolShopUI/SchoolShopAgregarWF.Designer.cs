@@ -42,36 +42,36 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(111, 34);
+            label1.Location = new Point(111, 39);
             label1.Name = "label1";
-            label1.Size = new Size(56, 15);
+            label1.Size = new Size(61, 17);
             label1.TabIndex = 0;
             label1.Text = "Producto";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(111, 87);
+            label2.Location = new Point(111, 99);
             label2.Name = "label2";
-            label2.Size = new Size(55, 15);
+            label2.Size = new Size(60, 17);
             label2.TabIndex = 1;
             label2.Text = "Cantidad";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(111, 135);
+            label3.Location = new Point(111, 153);
             label3.Name = "label3";
-            label3.Size = new Size(40, 15);
+            label3.Size = new Size(44, 17);
             label3.TabIndex = 2;
             label3.Text = "Precio";
             // 
             // dgSchoolShop
             // 
             dgSchoolShop.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgSchoolShop.Location = new Point(155, 235);
+            dgSchoolShop.Location = new Point(155, 266);
             dgSchoolShop.Name = "dgSchoolShop";
-            dgSchoolShop.Size = new Size(466, 203);
+            dgSchoolShop.Size = new Size(466, 230);
             dgSchoolShop.TabIndex = 3;
             dgSchoolShop.CellContentClick += dgSchoolShop_CellContentClick;
             // 
@@ -79,32 +79,31 @@
             // 
             cbProducto.FormattingEnabled = true;
             cbProducto.Items.AddRange(new object[] { "Regla", "Lapicero", "Lapiz", "Borrador grande", "Sacapunta de metal", "Pliego de cartulina", "Resma Papel bond", "Fastener Plastico", "Tijera", "Cuaderno #1", "Cuaderno #3", "Caja de colores 12/U", "Caja de colores 24/U", "Plumon", "Silicon liquido", "Hoja de foami", "Hoja de foami brillante", "Corrector", "Tirro", "" });
-            cbProducto.Location = new Point(244, 34);
+            cbProducto.Location = new Point(244, 39);
             cbProducto.Name = "cbProducto";
-            cbProducto.Size = new Size(377, 23);
+            cbProducto.Size = new Size(377, 25);
             cbProducto.TabIndex = 4;
             cbProducto.SelectedIndexChanged += cbProducto_SelectedIndexChanged;
             // 
             // txtCantidad
             // 
-            txtCantidad.Location = new Point(244, 79);
+            txtCantidad.Location = new Point(244, 90);
             txtCantidad.Name = "txtCantidad";
-            txtCantidad.Size = new Size(377, 23);
+            txtCantidad.Size = new Size(377, 25);
             txtCantidad.TabIndex = 5;
             // 
             // txtPrecioUnitario
             // 
-            txtPrecioUnitario.Location = new Point(244, 132);
+            txtPrecioUnitario.Location = new Point(244, 150);
             txtPrecioUnitario.Name = "txtPrecioUnitario";
-            txtPrecioUnitario.Size = new Size(377, 23);
+            txtPrecioUnitario.Size = new Size(377, 25);
             txtPrecioUnitario.TabIndex = 6;
-            //
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(361, 200);
+            btnGuardar.Location = new Point(361, 227);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(75, 23);
+            btnGuardar.Size = new Size(75, 26);
             btnGuardar.TabIndex = 7;
             btnGuardar.Text = "Registrar";
             btnGuardar.UseVisualStyleBackColor = true;
@@ -112,9 +111,9 @@
             // 
             // SchoolShopAgregarWF
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 390);
             Controls.Add(btnGuardar);
             Controls.Add(txtPrecioUnitario);
             Controls.Add(txtCantidad);
