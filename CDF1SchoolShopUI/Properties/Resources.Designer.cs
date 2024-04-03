@@ -59,35 +59,6 @@ namespace CDF1SchoolShopUI.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ojoMostrar {
-            get {
-                object obj = ResourceManager.GetObject("ojoMostrar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ojoMostrar1 {
-            get {
-                object obj = ResourceManager.GetObject("ojoMostrar1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ojoMostrar2 {
-            get {
-                object obj = ResourceManager.GetObject("ojoMostrar2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
+ master
     }
 }

@@ -45,6 +45,7 @@
     <Compile Include="LoginEN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProveedoresEN.cs" />
+    <Compile Include="VentasEN.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
