@@ -75,7 +75,7 @@
             label3.Size = new Size(44, 17);
             label3.TabIndex = 3;
             label3.Text = "Precio";
-            label3.Click += label3_Click;
+            
             // 
             // txtCantidad
             // 
