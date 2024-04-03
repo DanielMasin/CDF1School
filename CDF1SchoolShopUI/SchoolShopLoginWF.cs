@@ -29,6 +29,7 @@ namespace CDF1SchoolShopUI
                 
                 SchoolShopMenuWF MenuFormulario = new SchoolShopMenuWF();
                 MenuFormulario.Show();
+                this.Close();
             }
             else
             {
