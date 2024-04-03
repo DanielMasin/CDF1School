@@ -17,7 +17,7 @@ namespace CDF1SchoolShopUI
         public SchoolShopProveedoresWF()
         {
             InitializeComponent();
-            mtxtNumero.Mask = "00000000";
+            mtxtNumero.Mask = "0000-0000";
         }
 
         private void btnAgregarProveedor_Click(object sender, EventArgs e)
