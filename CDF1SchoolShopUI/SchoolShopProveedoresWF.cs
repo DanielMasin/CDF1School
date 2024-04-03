@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CDF1SchoolShopEN;
+using CDF1SchoolShopBL;
 
 namespace CDF1SchoolShopUI
 {
@@ -15,6 +17,25 @@ namespace CDF1SchoolShopUI
         public SchoolShopProveedoresWF()
         {
             InitializeComponent();
+            mtxtNumero.Mask = "00000000";
+        }
+
+        private void btnAgregarProveedor_Click(object sender, EventArgs e)
+        {
+            var ProveedoresEN = new ProveedoresEN
+            {
+                Proveedor = txtNombre.Text,
+                Numero = mtxtNumero.Text,
+
+            };
+            if (ProveedoresEN != null)
+            {
+                var ProveedoresBL = new ProveedoresBL();
+                ProveedoresBL.GuardarProveedoresEN(ProveedoresEN);
+                var ListProveedoresBL = ProveedoresBL.ObtenerTodosProveedoresEN();
+                dgMostrarProveedor.DataSource = null;
+                dgMostrarProveedor.DataSource = ListProveedoresBL;
+            }
         }
     }
 }
