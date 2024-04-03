@@ -45,6 +45,7 @@
     <Compile Include="LoginDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProveedoresDAL.cs" />
+    <Compile Include="VentasDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CDF1SchoolShopEN\CDF1SchoolShopEN.csproj">
