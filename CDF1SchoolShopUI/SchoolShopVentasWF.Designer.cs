@@ -35,8 +35,8 @@
             txtCantidad = new TextBox();
             txtPrecio = new TextBox();
             btnAgregar = new Button();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            dgSchoolShop = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgSchoolShop).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -70,11 +70,12 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(37, 134);
+            label3.Location = new Point(29, 142);
             label3.Name = "label3";
             label3.Size = new Size(44, 17);
             label3.TabIndex = 3;
             label3.Text = "Precio";
+            label3.Click += label3_Click;
             // 
             // txtCantidad
             // 
@@ -99,14 +100,15 @@
             btnAgregar.TabIndex = 6;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = false;
+            btnAgregar.Click += btnAgregar_Click;
             // 
-            // dataGridView1
+            // dgSchoolShop
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(54, 246);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(288, 150);
-            dataGridView1.TabIndex = 7;
+            dgSchoolShop.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgSchoolShop.Location = new Point(54, 246);
+            dgSchoolShop.Name = "dgSchoolShop";
+            dgSchoolShop.Size = new Size(288, 150);
+            dgSchoolShop.TabIndex = 7;
             // 
             // SchoolShopVentasWF
             // 
@@ -114,7 +116,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(506, 450);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgSchoolShop);
             Controls.Add(btnAgregar);
             Controls.Add(txtPrecio);
             Controls.Add(txtCantidad);
@@ -125,7 +127,8 @@
             Name = "SchoolShopVentasWF";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SchoolShopVentasWF";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += SchoolShopVentasWF_Load;
+            ((System.ComponentModel.ISupportInitialize)dgSchoolShop).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -139,6 +142,6 @@
         private TextBox txtCantidad;
         private TextBox txtPrecio;
         private Button btnAgregar;
-        private DataGridView dataGridView1;
+        private DataGridView dgSchoolShop;
     }
 }
