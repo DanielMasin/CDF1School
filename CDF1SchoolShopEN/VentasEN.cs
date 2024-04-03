@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CDF1SchoolShopEN
 {
-    internal class VentasEN
+    public class VentasEN
     {
         public int id { get; set; }
         public string Producto { get; set; }
