@@ -17,19 +17,39 @@ namespace CDF1SchoolShopUI
         public SchoolShopLoginWF()
         {
             InitializeComponent();
+            txtContra.PasswordChar = '*';
         }
 
         private void btnIniciarSeccion_Click(object sender, EventArgs e)
         {
             string nombreUsuario = txtUsuario.Text;
             string contra = txtContra.Text;
+            if (LoginBL.VerificarCredenciales(nombreUsuario, contra))
+            {
+                MessageBox.Show("¡Inicio de sesión exitoso!");
 
-            
                 SchoolShopMenuWF MenuFormulario = new SchoolShopMenuWF();
                 MenuFormulario.Show();
 
+            }
+            else
+            {
+                MessageBox.Show("Credenciales incorrectas. Inténtalo de nuevo.");
+            }
 
-            
+
+        }
+
+        private void btnMostrarContra_Click(object sender, EventArgs e)
+        {
+            if(txtContra.PasswordChar == '*')
+            {
+                txtContra.PasswordChar = '\0'; // Mostrar la contraseña
+            }
+            else
+            {
+                txtContra.PasswordChar = '*'; // Ocultar la contraseña
+            }
         }
     }
 }

@@ -33,6 +33,7 @@
             txtContra = new TextBox();
             txtUsuario = new TextBox();
             btnIniciarSeccion = new Button();
+            btnMostrarContra = new Button();
             SuspendLayout();
             // 
             // lblUsuario
@@ -40,9 +41,9 @@
             lblUsuario.AutoSize = true;
             lblUsuario.Location = new Point(147, 174);
             lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(168, 15);
+            lblUsuario.Size = new Size(151, 15);
             lblUsuario.TabIndex = 0;
-            lblUsuario.Text = "Ingrese un Nombre de Usuario";
+            lblUsuario.Text = "Ingrese Nombre de Usuario";
             // 
             // lblContra
             // 
@@ -69,7 +70,7 @@
             // 
             // btnIniciarSeccion
             // 
-            btnIniciarSeccion.Location = new Point(419, 333);
+            btnIniciarSeccion.Location = new Point(413, 326);
             btnIniciarSeccion.Name = "btnIniciarSeccion";
             btnIniciarSeccion.Size = new Size(148, 37);
             btnIniciarSeccion.TabIndex = 4;
@@ -77,11 +78,22 @@
             btnIniciarSeccion.UseVisualStyleBackColor = true;
             btnIniciarSeccion.Click += btnIniciarSeccion_Click;
             // 
+            // btnMostrarContra
+            // 
+            btnMostrarContra.Image = Properties.Resources.ojoMostrar2;
+            btnMostrarContra.Location = new Point(661, 237);
+            btnMostrarContra.Name = "btnMostrarContra";
+            btnMostrarContra.Size = new Size(42, 30);
+            btnMostrarContra.TabIndex = 5;
+            btnMostrarContra.UseVisualStyleBackColor = true;
+            btnMostrarContra.Click += btnMostrarContra_Click;
+            // 
             // SchoolShopLoginWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnMostrarContra);
             Controls.Add(btnIniciarSeccion);
             Controls.Add(txtUsuario);
             Controls.Add(txtContra);
@@ -100,5 +112,6 @@
         private TextBox txtContra;
         private TextBox txtUsuario;
         private Button btnIniciarSeccion;
+        private Button btnMostrarContra;
     }
 }

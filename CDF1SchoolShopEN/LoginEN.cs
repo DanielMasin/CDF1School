@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 namespace CDF1SchoolShopEN
 {
     public class LoginEN
-    {
-        //Holaque tal
-
+    { 
         public string NombreUsuario { get; set; }
         public string Contra { get; set; }
     }

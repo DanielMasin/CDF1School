@@ -28,89 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            dataGridView1 = new DataGridView();
-            button1 = new Button();
-            maskedTextBox1 = new MaskedTextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            lblNombre = new Label();
+            lblTelefono = new Label();
+            txtNombre = new TextBox();
+            dgMostrarProveedor = new DataGridView();
+            btnAgregarProveedor = new Button();
+            mtxtNumero = new MaskedTextBox();
+            ((System.ComponentModel.ISupportInitialize)dgMostrarProveedor).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // lblNombre
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(145, 80);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            lblNombre.AutoSize = true;
+            lblNombre.Location = new Point(99, 61);
+            lblNombre.Name = "lblNombre";
+            lblNombre.Size = new Size(110, 15);
+            lblNombre.TabIndex = 0;
+            lblNombre.Text = "Ingrese su Nombre:";
             // 
-            // label2
+            // lblTelefono
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(145, 134);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 15);
-            label2.TabIndex = 1;
-            label2.Text = "label2";
+            lblTelefono.AutoSize = true;
+            lblTelefono.Location = new Point(99, 115);
+            lblTelefono.Name = "lblTelefono";
+            lblTelefono.Size = new Size(111, 15);
+            lblTelefono.TabIndex = 1;
+            lblTelefono.Text = "Ingrese su Telefono:";
             // 
-            // textBox1
+            // txtNombre
             // 
-            textBox1.Location = new Point(241, 76);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 2;
+            txtNombre.Location = new Point(267, 53);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(341, 23);
+            txtNombre.TabIndex = 2;
             // 
-            // dataGridView1
+            // dgMostrarProveedor
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(135, 259);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(506, 150);
-            dataGridView1.TabIndex = 3;
+            dgMostrarProveedor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgMostrarProveedor.Location = new Point(135, 259);
+            dgMostrarProveedor.Name = "dgMostrarProveedor";
+            dgMostrarProveedor.Size = new Size(506, 150);
+            dgMostrarProveedor.TabIndex = 3;
             // 
-            // button1
+            // btnAgregarProveedor
             // 
-            button1.Location = new Point(135, 192);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 4;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnAgregarProveedor.Location = new Point(356, 214);
+            btnAgregarProveedor.Name = "btnAgregarProveedor";
+            btnAgregarProveedor.Size = new Size(75, 23);
+            btnAgregarProveedor.TabIndex = 4;
+            btnAgregarProveedor.Text = "Agregar";
+            btnAgregarProveedor.UseVisualStyleBackColor = true;
+            btnAgregarProveedor.Click += btnAgregarProveedor_Click;
             // 
-            // maskedTextBox1
+            // mtxtNumero
             // 
-            maskedTextBox1.Location = new Point(280, 142);
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(100, 23);
-            maskedTextBox1.TabIndex = 5;
+            mtxtNumero.Location = new Point(267, 107);
+            mtxtNumero.Name = "mtxtNumero";
+            mtxtNumero.Size = new Size(341, 23);
+            mtxtNumero.TabIndex = 8;
             // 
             // SchoolShopProveedoresWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(maskedTextBox1);
-            Controls.Add(button1);
-            Controls.Add(dataGridView1);
-            Controls.Add(textBox1);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(mtxtNumero);
+            Controls.Add(btnAgregarProveedor);
+            Controls.Add(dgMostrarProveedor);
+            Controls.Add(txtNombre);
+            Controls.Add(lblTelefono);
+            Controls.Add(lblNombre);
             Name = "SchoolShopProveedoresWF";
             Text = "SchoolShopProveedoresWF";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgMostrarProveedor).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private TextBox textBox1;
-        private DataGridView dataGridView1;
-        private Button button1;
-        private MaskedTextBox maskedTextBox1;
+        private Label lblNombre;
+        private Label lblTelefono;
+        private TextBox txtNombre;
+        private DataGridView dgMostrarProveedor;
+        private Button btnAgregarProveedor;
+        private MaskedTextBox mtxtNumero;
     }
 }
