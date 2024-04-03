@@ -23,13 +23,19 @@ namespace CDF1SchoolShopUI
         {
             string nombreUsuario = txtUsuario.Text;
             string contra = txtContra.Text;
-
-            
+            if (LoginBL.VerificarCredenciales(nombreUsuario, contra))
+            {
+                MessageBox.Show("¡Inicio de sesión exitoso!");
+                
                 SchoolShopMenuWF MenuFormulario = new SchoolShopMenuWF();
                 MenuFormulario.Show();
+            }
+            else
+            {
+                MessageBox.Show("Credenciales incorrectas. Inténtalo de nuevo.");
+            }
 
 
-            
         }
     }
 }

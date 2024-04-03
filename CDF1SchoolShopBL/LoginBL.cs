@@ -10,10 +10,10 @@ namespace CDF1SchoolShopBL
 {
     public class LoginBL
     {
-        public bool VerificarCredenciales(string NombreUsuario, string contra)
+        public static bool VerificarCredenciales(string nombreUsuario, string contra)
         {
-            return true;
-
+            // Llamar al método de la capa de datos para verificar las credenciales
+            return LoginDAL.VerificarCredenciales(nombreUsuario, contra);
         }
     }
 }
