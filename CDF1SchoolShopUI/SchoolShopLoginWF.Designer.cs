@@ -80,11 +80,11 @@
             // 
             // btnMostrarContra
             // 
-            btnMostrarContra.Location = new Point(661, 243);
+            btnMostrarContra.Image = Properties.Resources.ojoMostrar2;
+            btnMostrarContra.Location = new Point(661, 234);
             btnMostrarContra.Name = "btnMostrarContra";
-            btnMostrarContra.Size = new Size(75, 23);
+            btnMostrarContra.Size = new Size(34, 33);
             btnMostrarContra.TabIndex = 5;
-            btnMostrarContra.Text = "Mostrar";
             btnMostrarContra.UseVisualStyleBackColor = true;
             btnMostrarContra.Click += btnMostrarContra_Click;
             // 
