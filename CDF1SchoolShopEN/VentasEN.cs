@@ -10,6 +10,7 @@ namespace CDF1SchoolShopEN
     {
         public int id { get; set; }
         public string Producto { get; set; }
+        public string precio { get; set; } 
 
     }
 }
