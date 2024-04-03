@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CDF1SchoolShopEN;
+using CDF1SchoolShopBL;
 
 namespace CDF1SchoolShopUI
 {
@@ -20,8 +22,6 @@ namespace CDF1SchoolShopUI
         private void cbProducto_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtPrecio.Enabled = false;
-
-
             cbProducto.Items.Add("Regla");
             cbProducto.Items.Add("Lapicero");
             cbProducto.Items.Add("Lapiz");
