@@ -17,6 +17,7 @@ namespace CDF1SchoolShopUI
         public SchoolShopLoginWF()
         {
             InitializeComponent();
+            txtContra.PasswordChar = '*';
         }
 
         private void btnIniciarSeccion_Click(object sender, EventArgs e)
@@ -26,10 +27,10 @@ namespace CDF1SchoolShopUI
             if (LoginBL.VerificarCredenciales(nombreUsuario, contra))
             {
                 MessageBox.Show("¡Inicio de sesión exitoso!");
-                
+
                 SchoolShopMenuWF MenuFormulario = new SchoolShopMenuWF();
                 MenuFormulario.Show();
-                
+
             }
             else
             {
@@ -37,6 +38,18 @@ namespace CDF1SchoolShopUI
             }
 
 
+        }
+
+        private void btnMostrarContra_Click(object sender, EventArgs e)
+        {
+            if(txtContra.PasswordChar == '*')
+            {
+                txtContra.PasswordChar = '\0'; // Mostrar la contraseña
+            }
+            else
+            {
+                txtContra.PasswordChar = '*'; // Ocultar la contraseña
+            }
         }
     }
 }

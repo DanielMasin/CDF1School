@@ -33,6 +33,7 @@
             txtContra = new TextBox();
             txtUsuario = new TextBox();
             btnIniciarSeccion = new Button();
+            btnMostrarContra = new Button();
             SuspendLayout();
             // 
             // lblUsuario
@@ -77,11 +78,22 @@
             btnIniciarSeccion.UseVisualStyleBackColor = true;
             btnIniciarSeccion.Click += btnIniciarSeccion_Click;
             // 
+            // btnMostrarContra
+            // 
+            btnMostrarContra.Location = new Point(665, 251);
+            btnMostrarContra.Name = "btnMostrarContra";
+            btnMostrarContra.Size = new Size(75, 23);
+            btnMostrarContra.TabIndex = 5;
+            btnMostrarContra.Text = "Mostrar";
+            btnMostrarContra.UseVisualStyleBackColor = true;
+            btnMostrarContra.Click += btnMostrarContra_Click;
+            // 
             // SchoolShopLoginWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnMostrarContra);
             Controls.Add(btnIniciarSeccion);
             Controls.Add(txtUsuario);
             Controls.Add(txtContra);
@@ -100,5 +112,6 @@
         private TextBox txtContra;
         private TextBox txtUsuario;
         private Button btnIniciarSeccion;
+        private Button btnMostrarContra;
     }
 }
