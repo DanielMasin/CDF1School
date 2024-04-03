@@ -41,9 +41,9 @@
             lblUsuario.AutoSize = true;
             lblUsuario.Location = new Point(147, 174);
             lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(168, 15);
+            lblUsuario.Size = new Size(151, 15);
             lblUsuario.TabIndex = 0;
-            lblUsuario.Text = "Ingrese un Nombre de Usuario";
+            lblUsuario.Text = "Ingrese Nombre de Usuario";
             // 
             // lblContra
             // 
