@@ -80,7 +80,7 @@
             // 
             // btnMostrarContra
             // 
-            btnMostrarContra.Image = Properties.Resources.ojoMostrar2;
+            
             btnMostrarContra.Location = new Point(661, 237);
             btnMostrarContra.Name = "btnMostrarContra";
             btnMostrarContra.Size = new Size(42, 30);
