@@ -8,7 +8,7 @@ namespace CDF1SchoolShopEN
 {
     public class LoginEN
     {
-        //Hola
+        //Hola c
         public string NombreUsuario { get; set; }
         public string Contra { get; set; }
     }
