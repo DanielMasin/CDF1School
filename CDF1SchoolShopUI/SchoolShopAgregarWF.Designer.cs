@@ -113,7 +113,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 390);
+            ClientSize = new Size(612, 390);
             Controls.Add(btnGuardar);
             Controls.Add(txtPrecioUnitario);
             Controls.Add(txtCantidad);

@@ -117,19 +117,20 @@ namespace CDF1SchoolShopUI
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            var AgregarProductoEN = new AgregarProductoEN
+            var VentasEN = new VentasEN
             {
                 Producto = cbProducto.Text,
-                Cantidad = txtCantidad.Text,
-               = txtPrecio,
+             
+                 
+
             };
-            if (AgregarProductoEN != null)
+            if (VentasEN != null)
             {
-                var AgregarProductoBL = new AgregarProductoBL();
-                AgregarProductoBL.GuardarAgregarProductoEN(AgregarProductoEN);
-                var ListAgregarProductoBL = AgregarProductoBL.ObtenerTodoAgregarProductoEN();
+                var VentasBL = new VentasBL();
+                VentasBL.GuardarVentasEN(VentasEN);
+                var ListVentasBL = VentasBL.ObtenerTodosVentasEN();
                 dgSchoolShop.DataSource = null;
-                dgSchoolShop.DataSource = ListAgregarProductoBL;
+                dgSchoolShop.DataSource = ListVentasBL;
             }
         }
     }
