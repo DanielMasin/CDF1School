@@ -41,12 +41,14 @@
             proveedoresToolStripMenuItem = new ToolStripMenuItem();
             agregarProveedoresToolStripMenuItem = new ToolStripMenuItem();
             ajustesToolStripMenuItem = new ToolStripMenuItem();
+            ventasToolStripMenuItem = new ToolStripMenuItem();
+            ventasTotalesToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { productosToolStripMenuItem1, productosToolStripMenuItem2, inventarioToolStripMenuItem, comprasToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { productosToolStripMenuItem1, productosToolStripMenuItem2, inventarioToolStripMenuItem, comprasToolStripMenuItem, ventasToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -141,6 +143,20 @@
             ajustesToolStripMenuItem.Size = new Size(57, 20);
             ajustesToolStripMenuItem.Text = "Ajustes";
             // 
+            // ventasToolStripMenuItem
+            // 
+            ventasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ventasTotalesToolStripMenuItem });
+            ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
+            ventasToolStripMenuItem.Size = new Size(53, 20);
+            ventasToolStripMenuItem.Text = "Ventas";
+            // 
+            // ventasTotalesToolStripMenuItem
+            // 
+            ventasTotalesToolStripMenuItem.Name = "ventasTotalesToolStripMenuItem";
+            ventasTotalesToolStripMenuItem.Size = new Size(180, 22);
+            ventasTotalesToolStripMenuItem.Text = "Ventas Totales";
+            ventasTotalesToolStripMenuItem.Click += ventasTotalesToolStripMenuItem_Click;
+            // 
             // SchoolShopMenuWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -175,5 +191,6 @@
         private ToolStripMenuItem comprasToolStripMenuItem;
         private ToolStripMenuItem comprasHechasToolStripMenuItem;
         private ToolStripMenuItem agregarProveedoresToolStripMenuItem1;
+        private ToolStripMenuItem ventasTotalesToolStripMenuItem;
     }
 }

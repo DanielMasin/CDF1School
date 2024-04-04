@@ -54,6 +54,13 @@ namespace CDF1SchoolShopUI
         {
 
         }
+
+        private void ventasTotalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SchoolShopVentasWF VentasFormulario = new SchoolShopVentasWF();
+            VentasFormulario.Show();
+            this.Close();
+        }
     }
 }
 
