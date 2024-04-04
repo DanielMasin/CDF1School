@@ -9,7 +9,7 @@ namespace CDF1SchoolShopEN
 {
     public class InventarioEN
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string Agregar { get; set; }
         public string Salida { get; set; }
         public string Tipo { get; set; }
