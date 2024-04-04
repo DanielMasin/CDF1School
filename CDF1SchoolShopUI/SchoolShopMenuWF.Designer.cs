@@ -19,8 +19,7 @@
             }
             base.Dispose(disposing);
         }
-
-        #region Windows Form Designer generated code
+#region Windows Form Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -34,13 +33,15 @@
             proveedoresToolStripMenuItem = new ToolStripMenuItem();
             agregarProveedoresToolStripMenuItem = new ToolStripMenuItem();
             ajustesToolStripMenuItem = new ToolStripMenuItem();
-            cerrarSeccionToolStripMenuItem = new ToolStripMenuItem(); master
+            cerrarSeccionToolStripMenuItem = new ToolStripMenuItem();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            agregarProductosToolStripMenuItem1 = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { productosToolStripMenuItem, proveedoresToolStripMenuItem, ajustesToolStripMenuItem, ventasToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { productosToolStripMenuItem, proveedoresToolStripMenuItem, ajustesToolStripMenuItem, toolStripMenuItem1 });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 25);
@@ -57,7 +58,7 @@
             // agregarProductosToolStripMenuItem
             // 
             agregarProductosToolStripMenuItem.Name = "agregarProductosToolStripMenuItem";
- 
+            agregarProductosToolStripMenuItem.Size = new Size(187, 22);
             agregarProductosToolStripMenuItem.Text = "Agregar Productos";
             agregarProductosToolStripMenuItem.Click += agregarProductosToolStripMenuItem_Click;
             // 
@@ -70,7 +71,8 @@
             // 
             // agregarProveedoresToolStripMenuItem
             // 
-            agregarProveedoresToolStripMenuItem.Name = "agregarProveedoresToolStripMenuItem"; master
+            agregarProveedoresToolStripMenuItem.Name = "agregarProveedoresToolStripMenuItem";
+            agregarProveedoresToolStripMenuItem.Size = new Size(68, 22);
             // 
             // ajustesToolStripMenuItem
             // 
@@ -82,7 +84,22 @@
             // cerrarSeccionToolStripMenuItem
             // 
             cerrarSeccionToolStripMenuItem.Name = "cerrarSeccionToolStripMenuItem";
- master
+            cerrarSeccionToolStripMenuItem.Size = new Size(68, 22);
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { agregarProductosToolStripMenuItem1 });
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(58, 21);
+            toolStripMenuItem1.Text = "Ventas";
+            // 
+            // agregarProductosToolStripMenuItem1
+            // 
+            agregarProductosToolStripMenuItem1.Name = "agregarProductosToolStripMenuItem1";
+            agregarProductosToolStripMenuItem1.Size = new Size(187, 22);
+            agregarProductosToolStripMenuItem1.Text = "Agregar Productos";
+            agregarProductosToolStripMenuItem1.Click += agregarProductosToolStripMenuItem1_Click;
+            // 
             // SchoolShopMenuWF
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
@@ -92,7 +109,6 @@
             MainMenuStrip = menuStrip1;
             Name = "SchoolShopMenuWF";
             Text = "SchoolShopMenuWF";
-            Load += SchoolShopMenuWF_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -110,5 +126,7 @@
         private ToolStripMenuItem cerrarSeccionToolStripMenuItem;
         private ToolStripMenuItem ventasToolStripMenuItem;
         private ToolStripMenuItem agregarVentaToolStripMenuItem;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem agregarProductosToolStripMenuItem1;
     }
 }

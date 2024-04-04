@@ -59,6 +59,5 @@ namespace CDF1SchoolShopUI.Properties {
                 resourceCulture = value;
             }
         }
- master
     }
 }
