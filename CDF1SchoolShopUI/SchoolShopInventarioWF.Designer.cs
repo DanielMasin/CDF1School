@@ -1,6 +1,6 @@
 ﻿namespace CDF1SchoolShopUI
 {
-    partial class ScchoolShopInventarioWF
+    partial class SchoolShopInventarioWF
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "ScchoolShopInventarioWF";
+            this.Text = "SchoolShopInventarioWF";
         }
 
         #endregion

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CDF1SchoolShopUI
 {
-    public partial class ScchoolShopInventarioWF : Form
+    public partial class SchoolShopInventarioWF : Form
     {
-        public ScchoolShopInventarioWF()
+        public SchoolShopInventarioWF()
         {
             InitializeComponent();
         }
