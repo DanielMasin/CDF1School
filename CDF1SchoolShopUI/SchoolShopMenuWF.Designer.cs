@@ -33,18 +33,16 @@
             proveedoresToolStripMenuItem = new ToolStripMenuItem();
             agregarProveedoresToolStripMenuItem = new ToolStripMenuItem();
             ajustesToolStripMenuItem = new ToolStripMenuItem();
-            cerrarSeccionToolStripMenuItem = new ToolStripMenuItem();
-            toolStripMenuItem1 = new ToolStripMenuItem();
-            agregarProductosToolStripMenuItem1 = new ToolStripMenuItem();
+
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { productosToolStripMenuItem, proveedoresToolStripMenuItem, ajustesToolStripMenuItem, toolStripMenuItem1 });
+
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 25);
+            menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -52,13 +50,13 @@
             // 
             productosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { agregarProductosToolStripMenuItem });
             productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            productosToolStripMenuItem.Size = new Size(79, 21);
+            productosToolStripMenuItem.Size = new Size(73, 20);
             productosToolStripMenuItem.Text = "Productos";
             // 
             // agregarProductosToolStripMenuItem
             // 
             agregarProductosToolStripMenuItem.Name = "agregarProductosToolStripMenuItem";
-            agregarProductosToolStripMenuItem.Size = new Size(187, 22);
+
             agregarProductosToolStripMenuItem.Text = "Agregar Productos";
             agregarProductosToolStripMenuItem.Click += agregarProductosToolStripMenuItem_Click;
             // 
@@ -66,45 +64,26 @@
             // 
             proveedoresToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { agregarProveedoresToolStripMenuItem });
             proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            proveedoresToolStripMenuItem.Size = new Size(94, 21);
+            proveedoresToolStripMenuItem.Size = new Size(84, 20);
             proveedoresToolStripMenuItem.Text = "Proveedores";
             // 
             // agregarProveedoresToolStripMenuItem
             // 
             agregarProveedoresToolStripMenuItem.Name = "agregarProveedoresToolStripMenuItem";
-            agregarProveedoresToolStripMenuItem.Size = new Size(68, 22);
+
             // 
             // ajustesToolStripMenuItem
             // 
-            ajustesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cerrarSeccionToolStripMenuItem });
             ajustesToolStripMenuItem.Name = "ajustesToolStripMenuItem";
-            ajustesToolStripMenuItem.Size = new Size(61, 21);
+            ajustesToolStripMenuItem.Size = new Size(57, 20);
             ajustesToolStripMenuItem.Text = "Ajustes";
             // 
-            // cerrarSeccionToolStripMenuItem
-            // 
-            cerrarSeccionToolStripMenuItem.Name = "cerrarSeccionToolStripMenuItem";
-            cerrarSeccionToolStripMenuItem.Size = new Size(68, 22);
-            // 
-            // toolStripMenuItem1
-            // 
-            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { agregarProductosToolStripMenuItem1 });
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(58, 21);
-            toolStripMenuItem1.Text = "Ventas";
-            // 
-            // agregarProductosToolStripMenuItem1
-            // 
-            agregarProductosToolStripMenuItem1.Name = "agregarProductosToolStripMenuItem1";
-            agregarProductosToolStripMenuItem1.Size = new Size(187, 22);
-            agregarProductosToolStripMenuItem1.Text = "Agregar Productos";
-            agregarProductosToolStripMenuItem1.Click += agregarProductosToolStripMenuItem1_Click;
-            // 
+
             // SchoolShopMenuWF
             // 
-            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 510);
+            ClientSize = new Size(800, 450);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "SchoolShopMenuWF";
