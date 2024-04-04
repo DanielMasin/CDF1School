@@ -36,6 +36,7 @@
             txtCantidad = new TextBox();
             txtPrecioUnitario = new TextBox();
             btnGuardar = new Button();
+            btnAtras = new Button();
             ((System.ComponentModel.ISupportInitialize)dgSchoolShop).BeginInit();
             SuspendLayout();
             // 
@@ -109,11 +110,22 @@
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
             // 
+            // btnAtras
+            // 
+            btnAtras.Location = new Point(595, 385);
+            btnAtras.Name = "btnAtras";
+            btnAtras.Size = new Size(75, 23);
+            btnAtras.TabIndex = 8;
+            btnAtras.Text = "Atras";
+            btnAtras.UseVisualStyleBackColor = true;
+            btnAtras.Click += btnAtras_Click;
+            // 
             // SchoolShopAgregarWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-
+            ClientSize = new Size(744, 419);
+            Controls.Add(btnAtras);
             Controls.Add(btnGuardar);
             Controls.Add(txtPrecioUnitario);
             Controls.Add(txtCantidad);
@@ -140,5 +152,6 @@
         private TextBox txtCantidad;
         private TextBox txtPrecioUnitario;
         private Button btnGuardar;
+        private Button btnAtras;
     }
 }

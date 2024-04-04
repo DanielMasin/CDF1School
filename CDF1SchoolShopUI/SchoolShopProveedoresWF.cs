@@ -37,5 +37,10 @@ namespace CDF1SchoolShopUI
                 dgMostrarProveedor.DataSource = ListProveedoresBL;
             }
         }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

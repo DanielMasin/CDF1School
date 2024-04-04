@@ -61,6 +61,7 @@
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(341, 23);
             txtNombre.TabIndex = 2;
+            txtNombre.TextChanged += txtNombre_TextChanged;
             // 
             // dgMostrarProveedor
             // 

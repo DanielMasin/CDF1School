@@ -49,6 +49,11 @@ namespace CDF1SchoolShopUI
             ComprasFormulario.Show();
             this.Close();
         }
+
+        private void agregarProductosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
