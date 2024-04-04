@@ -52,7 +52,9 @@ namespace CDF1SchoolShopUI
 
         private void agregarProductosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            SchoolShopAgregarWF AgregarFormulario = new SchoolShopAgregarWF();
+            AgregarFormulario.Show();
+            this.Close();
         }
 
         private void ventasTotalesToolStripMenuItem_Click(object sender, EventArgs e)
