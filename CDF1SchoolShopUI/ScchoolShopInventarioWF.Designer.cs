@@ -86,6 +86,7 @@
             Controls.Add(textBuscar);
             Name = "ScchoolShopInventarioWF";
             Text = "SchoolShopInventarioWF";
+            Load += ScchoolShopInventarioWF_Load;
             ResumeLayout(false);
             PerformLayout();
         }

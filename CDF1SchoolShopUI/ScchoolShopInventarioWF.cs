@@ -16,5 +16,10 @@ namespace CDF1SchoolShopUI
         {
             InitializeComponent();
         }
+
+        private void ScchoolShopInventarioWF_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
