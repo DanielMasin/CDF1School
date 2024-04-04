@@ -120,8 +120,8 @@ namespace CDF1SchoolShopUI
             var VentasEN = new VentasEN
             {
                 Producto = cbProducto.Text,
-             
-                 
+                Cantidad = txtCantidad.Text,
+                Precio = txtPrecio.Text,
 
             };
             if (VentasEN != null)
