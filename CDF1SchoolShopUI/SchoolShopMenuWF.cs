@@ -24,9 +24,8 @@ namespace CDF1SchoolShopUI
             this.Close();
         }
 
-        private void agregarProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
         }
     }
 }
+

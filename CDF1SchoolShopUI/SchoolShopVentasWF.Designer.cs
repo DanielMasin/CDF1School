@@ -63,9 +63,9 @@
             label2.Cursor = Cursors.SizeAll;
             label2.Location = new Point(29, 85);
             label2.Name = "label2";
-            label2.Size = new Size(142, 17);
+            label2.Size = new Size(64, 17);
             label2.TabIndex = 2;
-            label2.Text = "Cantidad de Productos";
+            label2.Text = "Cantidad ";
             // 
             // label3
             // 
@@ -75,7 +75,7 @@
             label3.Size = new Size(44, 17);
             label3.TabIndex = 3;
             label3.Text = "Precio";
-            
+
             // 
             // txtCantidad
             // 
