@@ -24,8 +24,12 @@ namespace CDF1SchoolShopUI
             this.Close();
         }
 
+        private void ajusteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
         }
+
+       
     }
 }
 
