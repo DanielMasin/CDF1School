@@ -13,7 +13,7 @@ namespace CDF1SchoolShopDAL
 
         public void GuardarInventarioEN(InventarioEN pInventarioEN)
         {
-            pInventarioEN.id = ListInventarioEN.Select(ListIventarioEN => ListInventarioEN.id).DefaultIfEmpty(0).Max() + 1;
+            pInventarioEN.id = ListInventarioEN.Select(ListInventarioEN => ListInventarioEN.id).DefaultIfEmpty(0).Max() + 1;
             ListInventarioEN.Add(pInventarioEN);
         }
         public List<InventarioEN> ObtenerTodosInventarioEN()
