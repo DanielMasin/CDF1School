@@ -73,9 +73,8 @@
             // 
             productosToolStripMenuItem2.DropDownItems.AddRange(new ToolStripItem[] { agregarProveedoresToolStripMenuItem1 });
             productosToolStripMenuItem2.Name = "productosToolStripMenuItem2";
-            productosToolStripMenuItem2.Size = new Size(73, 20);
-            productosToolStripMenuItem2.Text = "Productos";
-            
+            productosToolStripMenuItem2.Size = new Size(84, 20);
+            productosToolStripMenuItem2.Text = "Proveedores";
             // 
             // agregarProveedoresToolStripMenuItem1
             // 
