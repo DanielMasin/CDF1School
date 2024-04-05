@@ -19,7 +19,7 @@
             }
             base.Dispose(disposing);
         }
-#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -33,13 +33,10 @@
             proveedoresToolStripMenuItem = new ToolStripMenuItem();
             agregarProveedoresToolStripMenuItem = new ToolStripMenuItem();
             ajustesToolStripMenuItem = new ToolStripMenuItem();
-
-            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -56,7 +53,7 @@
             // agregarProductosToolStripMenuItem
             // 
             agregarProductosToolStripMenuItem.Name = "agregarProductosToolStripMenuItem";
-
+            agregarProductosToolStripMenuItem.Size = new Size(187, 22);
             agregarProductosToolStripMenuItem.Text = "Agregar Productos";
             agregarProductosToolStripMenuItem.Click += agregarProductosToolStripMenuItem_Click;
             // 
@@ -70,7 +67,7 @@
             // agregarProveedoresToolStripMenuItem
             // 
             agregarProveedoresToolStripMenuItem.Name = "agregarProveedoresToolStripMenuItem";
-
+            agregarProveedoresToolStripMenuItem.Size = new Size(68, 22);
             // 
             // ajustesToolStripMenuItem
             // 
@@ -78,18 +75,15 @@
             ajustesToolStripMenuItem.Size = new Size(57, 20);
             ajustesToolStripMenuItem.Text = "Ajustes";
             // 
-
             // SchoolShopMenuWF
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 510);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "SchoolShopMenuWF";
             Text = "SchoolShopMenuWF";
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
