@@ -63,6 +63,8 @@ namespace CDF1SchoolShopUI
             VentasFormulario.Show();
             this.Close();
         }
+
+       
     }
 }
 

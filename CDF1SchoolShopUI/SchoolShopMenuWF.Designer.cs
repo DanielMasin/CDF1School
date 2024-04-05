@@ -36,13 +36,13 @@
             productosToolStripMenuItem3 = new ToolStripMenuItem();
             comprasToolStripMenuItem = new ToolStripMenuItem();
             comprasHechasToolStripMenuItem = new ToolStripMenuItem();
+            ventasToolStripMenuItem = new ToolStripMenuItem();
+            ventasTotalesToolStripMenuItem = new ToolStripMenuItem();
             productosToolStripMenuItem = new ToolStripMenuItem();
             agregarProductosToolStripMenuItem = new ToolStripMenuItem();
             proveedoresToolStripMenuItem = new ToolStripMenuItem();
             agregarProveedoresToolStripMenuItem = new ToolStripMenuItem();
             ajustesToolStripMenuItem = new ToolStripMenuItem();
-            ventasToolStripMenuItem = new ToolStripMenuItem();
-            ventasTotalesToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -65,7 +65,7 @@
             // agregarProductosToolStripMenuItem1
             // 
             agregarProductosToolStripMenuItem1.Name = "agregarProductosToolStripMenuItem1";
-            agregarProductosToolStripMenuItem1.Size = new Size(180, 22);
+            agregarProductosToolStripMenuItem1.Size = new Size(173, 22);
             agregarProductosToolStripMenuItem1.Text = "Agregar Productos";
             agregarProductosToolStripMenuItem1.Click += agregarProductosToolStripMenuItem1_Click;
             // 
@@ -75,6 +75,7 @@
             productosToolStripMenuItem2.Name = "productosToolStripMenuItem2";
             productosToolStripMenuItem2.Size = new Size(73, 20);
             productosToolStripMenuItem2.Text = "Productos";
+            
             // 
             // agregarProveedoresToolStripMenuItem1
             // 
@@ -107,9 +108,23 @@
             // comprasHechasToolStripMenuItem
             // 
             comprasHechasToolStripMenuItem.Name = "comprasHechasToolStripMenuItem";
-            comprasHechasToolStripMenuItem.Size = new Size(180, 22);
+            comprasHechasToolStripMenuItem.Size = new Size(162, 22);
             comprasHechasToolStripMenuItem.Text = "Compras hechas";
             comprasHechasToolStripMenuItem.Click += comprasHechasToolStripMenuItem_Click;
+            // 
+            // ventasToolStripMenuItem
+            // 
+            ventasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ventasTotalesToolStripMenuItem });
+            ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
+            ventasToolStripMenuItem.Size = new Size(53, 20);
+            ventasToolStripMenuItem.Text = "Ventas";
+            // 
+            // ventasTotalesToolStripMenuItem
+            // 
+            ventasTotalesToolStripMenuItem.Name = "ventasTotalesToolStripMenuItem";
+            ventasTotalesToolStripMenuItem.Size = new Size(147, 22);
+            ventasTotalesToolStripMenuItem.Text = "Ventas Totales";
+            ventasTotalesToolStripMenuItem.Click += ventasTotalesToolStripMenuItem_Click;
             // 
             // productosToolStripMenuItem
             // 
@@ -142,20 +157,6 @@
             ajustesToolStripMenuItem.Name = "ajustesToolStripMenuItem";
             ajustesToolStripMenuItem.Size = new Size(57, 20);
             ajustesToolStripMenuItem.Text = "Ajustes";
-            // 
-            // ventasToolStripMenuItem
-            // 
-            ventasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ventasTotalesToolStripMenuItem });
-            ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-            ventasToolStripMenuItem.Size = new Size(53, 20);
-            ventasToolStripMenuItem.Text = "Ventas";
-            // 
-            // ventasTotalesToolStripMenuItem
-            // 
-            ventasTotalesToolStripMenuItem.Name = "ventasTotalesToolStripMenuItem";
-            ventasTotalesToolStripMenuItem.Size = new Size(180, 22);
-            ventasTotalesToolStripMenuItem.Text = "Ventas Totales";
-            ventasTotalesToolStripMenuItem.Click += ventasTotalesToolStripMenuItem_Click;
             // 
             // SchoolShopMenuWF
             // 
