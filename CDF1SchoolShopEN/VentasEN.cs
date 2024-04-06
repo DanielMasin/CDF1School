@@ -12,6 +12,6 @@ namespace CDF1SchoolShopEN
         public string Producto { get; set; }
         public string Precio { get; set; } 
         public string Cantidad { get; set; }
-        public string ventatotal { get; set; }
+        public string VentaTotal { get; set; }
     }
 }

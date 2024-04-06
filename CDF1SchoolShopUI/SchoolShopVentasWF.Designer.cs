@@ -36,7 +36,7 @@
             txtPrecio = new TextBox();
             btnAgregar = new Button();
             dgSchoolShop = new DataGridView();
-            btnAtras = new Button();
+
             ((System.ComponentModel.ISupportInitialize)dgSchoolShop).BeginInit();
             SuspendLayout();
             // 
@@ -93,8 +93,7 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.BackColor = Color.IndianRed;
-            btnAgregar.Location = new Point(389, 166);
+
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(75, 26);
             btnAgregar.TabIndex = 6;
@@ -110,23 +109,14 @@
             dgSchoolShop.Size = new Size(288, 132);
             dgSchoolShop.TabIndex = 7;
             // 
-            // btnAtras
-            // 
-            btnAtras.Location = new Point(419, 351);
-            btnAtras.Name = "btnAtras";
-            btnAtras.Size = new Size(75, 23);
-            btnAtras.TabIndex = 8;
-            btnAtras.Text = "Atras";
-            btnAtras.UseVisualStyleBackColor = true;
-            btnAtras.Click += btnAtras_Click;
+
             // 
             // SchoolShopVentasWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(506, 397);
-            Controls.Add(btnAtras);
+
             Controls.Add(dgSchoolShop);
             Controls.Add(btnAgregar);
             Controls.Add(txtPrecio);
@@ -154,6 +144,6 @@
         private TextBox txtPrecio;
         private Button btnAgregar;
         private DataGridView dgSchoolShop;
-        private Button btnAtras;
+
     }
 }
