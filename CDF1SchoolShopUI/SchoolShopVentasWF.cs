@@ -16,6 +16,7 @@ namespace CDF1SchoolShopUI
     {
         int indice = 0;
         double Precio = 0;
+        double ventatotal = 0; 
         public SchoolShopVentasWF()
         {
             InitializeComponent();
@@ -121,7 +122,7 @@ namespace CDF1SchoolShopUI
             {
                 Producto = cbProducto.Text,
                 Cantidad = txtCantidad.Text,
-                Precio = txtPrecio.Text,
+                Precio = Precio.ToString(),
 
             };
             if (VentasEN != null)
