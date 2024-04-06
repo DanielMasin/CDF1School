@@ -16,7 +16,7 @@ namespace CDF1SchoolShopUI
     {
         int indice = 0;
         double Precio = 0;
-        double ventatotal = 0; 
+        double ventatotal = 0;
         public SchoolShopVentasWF()
         {
             InitializeComponent();
@@ -133,7 +133,21 @@ namespace CDF1SchoolShopUI
                 dgSchoolShop.DataSource = null;
                 dgSchoolShop.DataSource = ListVentasBL;
 
+                VentaTotal();
             }
+        }
+        private void VentaTotal()
+        {
+            double VentaTotal = 0.0;
+
+            foreach (DataGridViewRow row in dgSchoolShop.Rows)
+            {
+                double Precio = Convert.ToDouble(row.Cells["Precio"].Value);
+                int Cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value);
+
+                VentaTotal += Precio * Cantidad;
+            }
+            txtVentaTotal.Text = VentaTotal.ToString("c");
         }
     }
 }

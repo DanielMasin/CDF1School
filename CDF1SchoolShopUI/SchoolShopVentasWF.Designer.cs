@@ -36,6 +36,7 @@
             txtPrecio = new TextBox();
             btnAgregar = new Button();
             dgSchoolShop = new DataGridView();
+            txtVentaTotal = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgSchoolShop).BeginInit();
             SuspendLayout();
             // 
@@ -109,12 +110,20 @@
             dgSchoolShop.Size = new Size(288, 150);
             dgSchoolShop.TabIndex = 7;
             // 
+            // txtVentaTotal
+            // 
+            txtVentaTotal.Location = new Point(35, 195);
+            txtVentaTotal.Name = "txtVentaTotal";
+            txtVentaTotal.Size = new Size(255, 25);
+            txtVentaTotal.TabIndex = 8;
+            // 
             // SchoolShopVentasWF
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(506, 450);
+            Controls.Add(txtVentaTotal);
             Controls.Add(dgSchoolShop);
             Controls.Add(btnAgregar);
             Controls.Add(txtPrecio);
@@ -142,5 +151,6 @@
         private TextBox txtPrecio;
         private Button btnAgregar;
         private DataGridView dgSchoolShop;
+        private TextBox txtVentaTotal;
     }
 }
