@@ -36,7 +36,9 @@
             txtPrecio = new TextBox();
             btnAgregar = new Button();
             dgSchoolShop = new DataGridView();
-            txtVentaTotal = new TextBox();
+            btnAtras = new Button();
+            btnVentaCompleta = new Button();
+            btnLimpiar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgSchoolShop).BeginInit();
             SuspendLayout();
             // 
@@ -54,7 +56,7 @@
             cbProducto.FormattingEnabled = true;
             cbProducto.Location = new Point(142, 29);
             cbProducto.Name = "cbProducto";
-            cbProducto.Size = new Size(243, 25);
+            cbProducto.Size = new Size(322, 25);
             cbProducto.TabIndex = 1;
             cbProducto.SelectedIndexChanged += cbProducto_SelectedIndexChanged;
             // 
@@ -79,21 +81,21 @@
             // 
             // txtCantidad
             // 
-            txtCantidad.Location = new Point(171, 82);
+            txtCantidad.Location = new Point(142, 82);
             txtCantidad.Name = "txtCantidad";
-            txtCantidad.Size = new Size(214, 25);
+            txtCantidad.Size = new Size(322, 25);
             txtCantidad.TabIndex = 4;
             // 
             // txtPrecio
             // 
             txtPrecio.Location = new Point(142, 134);
             txtPrecio.Name = "txtPrecio";
-            txtPrecio.Size = new Size(243, 25);
+            txtPrecio.Size = new Size(322, 25);
             txtPrecio.TabIndex = 5;
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(394, 176);
+            btnAgregar.Location = new Point(18, 191);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(75, 29);
             btnAgregar.TabIndex = 6;
@@ -104,25 +106,53 @@
             // dgSchoolShop
             // 
             dgSchoolShop.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgSchoolShop.Location = new Point(54, 246);
+            dgSchoolShop.Location = new Point(29, 246);
             dgSchoolShop.Name = "dgSchoolShop";
-            dgSchoolShop.Size = new Size(288, 150);
+            dgSchoolShop.Size = new Size(456, 243);
             dgSchoolShop.TabIndex = 7;
             // 
-            // txtVentaTotal
+            // btnAtras
             // 
-            txtVentaTotal.Location = new Point(39, 192);
-            txtVentaTotal.Name = "txtVentaTotal";
-            txtVentaTotal.Size = new Size(260, 25);
-            txtVentaTotal.TabIndex = 8;
+            btnAtras.BackColor = Color.White;
+            btnAtras.Location = new Point(423, 197);
+            btnAtras.Name = "btnAtras";
+            btnAtras.Size = new Size(75, 23);
+            btnAtras.TabIndex = 8;
+            btnAtras.Text = "Atras";
+            btnAtras.UseVisualStyleBackColor = false;
+            btnAtras.Click += btnAtras_Click;
+            // 
+            // btnVentaCompleta
+            // 
+            btnVentaCompleta.BackColor = Color.White;
+            btnVentaCompleta.Location = new Point(121, 197);
+            btnVentaCompleta.Name = "btnVentaCompleta";
+            btnVentaCompleta.Size = new Size(150, 23);
+            btnVentaCompleta.TabIndex = 9;
+            btnVentaCompleta.Text = "Venta Completada";
+            btnVentaCompleta.UseVisualStyleBackColor = false;
+            btnVentaCompleta.Click += btnVentaCompleta_Click;
+            // 
+            // btnLimpiar
+            // 
+            btnLimpiar.BackColor = Color.White;
+            btnLimpiar.Location = new Point(301, 197);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(92, 23);
+            btnLimpiar.TabIndex = 10;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = false;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // SchoolShopVentasWF
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(521, 393);
-            Controls.Add(txtVentaTotal);
+            ClientSize = new Size(521, 501);
+            Controls.Add(btnLimpiar);
+            Controls.Add(btnVentaCompleta);
+            Controls.Add(btnAtras);
             Controls.Add(dgSchoolShop);
             Controls.Add(btnAgregar);
             Controls.Add(txtPrecio);
@@ -150,6 +180,8 @@
         private TextBox txtPrecio;
         private Button btnAgregar;
         private DataGridView dgSchoolShop;
-        private TextBox txtVentaTotal;
+        private Button btnAtras;
+        private Button btnVentaCompleta;
+        private Button btnLimpiar;
     }
 }

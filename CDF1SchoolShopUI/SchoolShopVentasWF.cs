@@ -132,22 +132,31 @@ namespace CDF1SchoolShopUI
                 var ListVentasBL = VentasBL.ObtenerTodosVentasEN();
                 dgSchoolShop.DataSource = null;
                 dgSchoolShop.DataSource = ListVentasBL;
-
-                VentaTotal();
             }
+        }
+
+        private void btnVentaCompleta_Click(object sender, EventArgs e)
+        {
+            VentaTotal();
         }
         private void VentaTotal()
         {
-            double VentaTotal = 0.0;
+            double Total = 0.0;
 
             foreach (DataGridViewRow row in dgSchoolShop.Rows)
             {
                 double Precio = Convert.ToDouble(row.Cells["Precio"].Value);
-                int Cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value);
+                double Cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value);
 
-                VentaTotal += Precio * Cantidad;
+                Total += Precio * Cantidad;
             }
-            txtVentaTotal.Text = VentaTotal.ToString("c");
+            MessageBox.Show("¡Venta Completada!\n\nSu total de compra es " + Total.ToString("c"), "Venta Completada");
+        }
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            cbProducto.SelectedIndex = 0;
+            txtCantidad.Text = ""; 
+            txtPrecio.Text = "";
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
@@ -158,3 +167,4 @@ namespace CDF1SchoolShopUI
         }
     }
 }
+
