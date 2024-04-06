@@ -27,9 +27,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            ventasToolStripMenuItem1 = new ToolStripMenuItem();
-            AgregarVenta = new ToolStripMenuItem();
+            menuStrip1 = new MenuStrip()
             productosToolStripMenuItem1 = new ToolStripMenuItem();
             agregarProductosToolStripMenuItem1 = new ToolStripMenuItem();
             productosToolStripMenuItem2 = new ToolStripMenuItem();
@@ -60,17 +58,11 @@
             // 
             // ventasToolStripMenuItem1
             // 
-            ventasToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { AgregarVenta });
-            ventasToolStripMenuItem1.Name = "ventasToolStripMenuItem1";
-            ventasToolStripMenuItem1.Size = new Size(58, 21);
-            ventasToolStripMenuItem1.Text = "Ventas";
+
             // 
             // AgregarVenta
             // 
-            AgregarVenta.Name = "AgregarVenta";
-            AgregarVenta.Size = new Size(180, 22);
-            AgregarVenta.Text = "Agregar Venta";
-            AgregarVenta.Click += AgregarVenta_Click;
+            
             // 
             // productosToolStripMenuItem1
             // 
@@ -171,21 +163,15 @@
             // 
             // productosToolStripMenuItem4
             // 
-            productosToolStripMenuItem4.Name = "productosToolStripMenuItem4";
-            productosToolStripMenuItem4.Size = new Size(73, 20);
-            productosToolStripMenuItem4.Text = "Productos";
+
             // 
             // comprasToolStripMenuItem1
             // 
-            comprasToolStripMenuItem1.Name = "comprasToolStripMenuItem1";
-            comprasToolStripMenuItem1.Size = new Size(67, 20);
-            comprasToolStripMenuItem1.Text = "Compras";
+
             // 
             // ventasToolStripMenuItem1
             // 
-            ventasToolStripMenuItem1.Name = "ventasToolStripMenuItem1";
-            ventasToolStripMenuItem1.Size = new Size(53, 20);
-            ventasToolStripMenuItem1.Text = "Ventas";
+            
             // 
             // SchoolShopMenuWF
             // 
