@@ -67,7 +67,6 @@
             agregarProductosToolStripMenuItem1.Name = "agregarProductosToolStripMenuItem1";
             agregarProductosToolStripMenuItem1.Size = new Size(173, 22);
             agregarProductosToolStripMenuItem1.Text = "Agregar Productos";
-            agregarProductosToolStripMenuItem1.Click += agregarProductosToolStripMenuItem1_Click;
             // 
             // productosToolStripMenuItem2
             // 
@@ -81,7 +80,6 @@
             agregarProveedoresToolStripMenuItem1.Name = "agregarProveedoresToolStripMenuItem1";
             agregarProveedoresToolStripMenuItem1.Size = new Size(184, 22);
             agregarProveedoresToolStripMenuItem1.Text = "Agregar Proveedores";
-            agregarProveedoresToolStripMenuItem1.Click += agregarProveedoresToolStripMenuItem1_Click;
             // 
             // inventarioToolStripMenuItem
             // 
@@ -95,7 +93,6 @@
             productosToolStripMenuItem3.Name = "productosToolStripMenuItem3";
             productosToolStripMenuItem3.Size = new Size(131, 22);
             productosToolStripMenuItem3.Text = "Productos ";
-            productosToolStripMenuItem3.Click += productosToolStripMenuItem3_Click;
             // 
             // comprasToolStripMenuItem
             // 
@@ -109,7 +106,6 @@
             comprasHechasToolStripMenuItem.Name = "comprasHechasToolStripMenuItem";
             comprasHechasToolStripMenuItem.Size = new Size(162, 22);
             comprasHechasToolStripMenuItem.Text = "Compras hechas";
-            comprasHechasToolStripMenuItem.Click += comprasHechasToolStripMenuItem_Click;
             // 
             // ventasToolStripMenuItem
             // 
@@ -123,7 +119,6 @@
             ventasTotalesToolStripMenuItem.Name = "ventasTotalesToolStripMenuItem";
             ventasTotalesToolStripMenuItem.Size = new Size(147, 22);
             ventasTotalesToolStripMenuItem.Text = "Ventas Totales";
-            ventasTotalesToolStripMenuItem.Click += ventasTotalesToolStripMenuItem_Click;
             // 
             // productosToolStripMenuItem
             // 
