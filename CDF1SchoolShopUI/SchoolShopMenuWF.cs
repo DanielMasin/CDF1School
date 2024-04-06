@@ -22,7 +22,13 @@ namespace CDF1SchoolShopUI
             SchoolShopAgregarWF AgregarFormulario = new SchoolShopAgregarWF();
             AgregarFormulario.Show();
             this.Close();
+        }
 
+        private void AgregarVenta_Click(object sender, EventArgs e)
+        {
+            SchoolShopVentasWF AgregarFormulario = new SchoolShopVentasWF();
+            AgregarFormulario.Show();
+            this.Close();
         }
     }
 }

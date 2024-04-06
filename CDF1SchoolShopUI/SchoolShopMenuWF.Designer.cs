@@ -69,7 +69,7 @@
             AgregarVenta.Name = "AgregarVenta";
             AgregarVenta.Size = new Size(180, 22);
             AgregarVenta.Text = "Agregar Venta";
-            AgregarVenta.Click += toolStripMenuItem2_Click;
+            AgregarVenta.Click += AgregarVenta_Click;
             // 
             // productosToolStripMenuItem1
             // 
