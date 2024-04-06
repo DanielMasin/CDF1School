@@ -39,15 +39,5 @@ namespace CDF1SchoolShopUI
             cbCategoria.Items.Add("Corrector");
             cbCategoria.Items.Add("Tirro");
         }
-
-        private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-          
-        }
     }
 }
