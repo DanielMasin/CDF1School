@@ -14,7 +14,7 @@ namespace CDF1SchoolShopEN
         public string[] Codigo;
         public string[] Descripcion;
         public string[] Precio;
-        public int[] Existencia;
+        public int[] Marca;
         public string[] Categoria;
     }
 

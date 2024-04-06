@@ -19,11 +19,6 @@ namespace CDF1SchoolShopUI
 
         private void ScchoolShopInventarioWF_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
-        {
             cbCategoria.Items.Add("Reglas");
             cbCategoria.Items.Add("Lapiceros");
             cbCategoria.Items.Add("Lapiz");
@@ -43,6 +38,11 @@ namespace CDF1SchoolShopUI
             cbCategoria.Items.Add("Hojas de foami brillantes");
             cbCategoria.Items.Add("Corrector");
             cbCategoria.Items.Add("Tirro");
+        }
+
+        private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

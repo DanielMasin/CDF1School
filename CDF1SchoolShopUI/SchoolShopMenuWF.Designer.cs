@@ -35,12 +35,14 @@
             agregarProveedoresToolStripMenuItem = new ToolStripMenuItem();
             ajustesToolStripMenuItem = new ToolStripMenuItem();
             cerrarSeccionToolStripMenuItem = new ToolStripMenuItem();
+            inventariosToolStripMenuItem = new ToolStripMenuItem();
+            entradaInventarioToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { productosToolStripMenuItem, proveedoresToolStripMenuItem, ajustesToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { productosToolStripMenuItem, proveedoresToolStripMenuItem, ajustesToolStripMenuItem, inventariosToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -88,6 +90,20 @@
             cerrarSeccionToolStripMenuItem.Size = new Size(150, 22);
             cerrarSeccionToolStripMenuItem.Text = "Cerrar Seccion";
             // 
+            // inventariosToolStripMenuItem
+            // 
+            inventariosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { entradaInventarioToolStripMenuItem });
+            inventariosToolStripMenuItem.Name = "inventariosToolStripMenuItem";
+            inventariosToolStripMenuItem.Size = new Size(77, 20);
+            inventariosToolStripMenuItem.Text = "Inventarios";
+            // 
+            // entradaInventarioToolStripMenuItem
+            // 
+            entradaInventarioToolStripMenuItem.Name = "entradaInventarioToolStripMenuItem";
+            entradaInventarioToolStripMenuItem.Size = new Size(180, 22);
+            entradaInventarioToolStripMenuItem.Text = "entrada inventario";
+            entradaInventarioToolStripMenuItem.Click += entradaInventarioToolStripMenuItem_Click;
+            // 
             // SchoolShopMenuWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -112,5 +128,7 @@
         private ToolStripMenuItem agregarProveedoresToolStripMenuItem;
         private ToolStripMenuItem ajustesToolStripMenuItem;
         private ToolStripMenuItem cerrarSeccionToolStripMenuItem;
+        private ToolStripMenuItem inventariosToolStripMenuItem;
+        private ToolStripMenuItem entradaInventarioToolStripMenuItem;
     }
 }

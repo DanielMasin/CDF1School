@@ -30,5 +30,12 @@ namespace CDF1SchoolShopUI
             ProveedoresFormulario.Show();
             this.Close();
         }
+
+        private void entradaInventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ScchoolShopInventarioWF InventarioFormulario = new ScchoolShopInventarioWF();
+            InventarioFormulario.Show();
+            this.Close();
+        }
     }
 }

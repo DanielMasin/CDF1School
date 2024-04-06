@@ -30,7 +30,6 @@
         {
             components = new System.ComponentModel.Container();
             contextMenuStrip1 = new ContextMenuStrip(components);
-            lista = new ListBox();
             button1 = new Button();
             txtCodigo = new TextBox();
             txtDescripcion = new TextBox();
@@ -44,6 +43,7 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            listaInventario = new ListView();
             SuspendLayout();
             // 
             // contextMenuStrip1
@@ -51,18 +51,9 @@
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.Size = new Size(61, 4);
             // 
-            // lista
-            // 
-            lista.FormattingEnabled = true;
-            lista.ItemHeight = 15;
-            lista.Location = new Point(31, 234);
-            lista.Name = "lista";
-            lista.Size = new Size(464, 154);
-            lista.TabIndex = 4;
-            // 
             // button1
             // 
-            button1.Location = new Point(517, 365);
+            button1.Location = new Point(579, 386);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 6;
@@ -72,55 +63,55 @@
             // txtCodigo
             // 
             txtCodigo.AcceptsReturn = true;
-            txtCodigo.Location = new Point(409, 12);
+            txtCodigo.Location = new Point(132, 22);
             txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(183, 23);
+            txtCodigo.Size = new Size(195, 23);
             txtCodigo.TabIndex = 7;
             // 
             // txtDescripcion
             // 
-            txtDescripcion.Location = new Point(409, 52);
+            txtDescripcion.Location = new Point(132, 66);
             txtDescripcion.Name = "txtDescripcion";
-            txtDescripcion.Size = new Size(183, 23);
+            txtDescripcion.Size = new Size(195, 23);
             txtDescripcion.TabIndex = 8;
             // 
             // txtPrecio
             // 
-            txtPrecio.Location = new Point(409, 97);
+            txtPrecio.Location = new Point(132, 115);
             txtPrecio.Name = "txtPrecio";
-            txtPrecio.Size = new Size(183, 23);
+            txtPrecio.Size = new Size(195, 23);
             txtPrecio.TabIndex = 9;
             // 
             // txtExistencia
             // 
-            txtExistencia.Location = new Point(409, 145);
+            txtExistencia.Location = new Point(442, 24);
             txtExistencia.Name = "txtExistencia";
-            txtExistencia.Size = new Size(183, 23);
+            txtExistencia.Size = new Size(212, 23);
             txtExistencia.TabIndex = 10;
             // 
             // cbCategoria
             // 
             cbCategoria.FormattingEnabled = true;
-            cbCategoria.Location = new Point(409, 189);
+            cbCategoria.Location = new Point(442, 66);
             cbCategoria.Name = "cbCategoria";
-            cbCategoria.Size = new Size(183, 23);
+            cbCategoria.Size = new Size(212, 23);
             cbCategoria.TabIndex = 11;
             cbCategoria.SelectedIndexChanged += cbCategoria_SelectedIndexChanged;
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(517, 241);
+            btnGuardar.Location = new Point(579, 119);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(75, 23);
             btnGuardar.TabIndex = 12;
-            btnGuardar.Text = "Guardar";
+            btnGuardar.Text = "Buscar";
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(278, 18);
+            label1.Location = new Point(23, 27);
             label1.Name = "label1";
             label1.Size = new Size(46, 15);
             label1.TabIndex = 13;
@@ -129,7 +120,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(278, 55);
+            label2.Location = new Point(23, 74);
             label2.Name = "label2";
             label2.Size = new Size(69, 15);
             label2.TabIndex = 14;
@@ -138,7 +129,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(278, 100);
+            label3.Location = new Point(23, 123);
             label3.Name = "label3";
             label3.Size = new Size(84, 15);
             label3.TabIndex = 15;
@@ -147,16 +138,16 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(278, 145);
+            label4.Location = new Point(359, 27);
             label4.Name = "label4";
-            label4.Size = new Size(54, 15);
+            label4.Size = new Size(40, 15);
             label4.TabIndex = 16;
-            label4.Text = "Exitencia";
+            label4.Text = "Marca";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(278, 192);
+            label5.Location = new Point(359, 74);
             label5.Name = "label5";
             label5.Size = new Size(58, 15);
             label5.TabIndex = 17;
@@ -168,17 +159,26 @@
             label6.AutoSize = true;
             label6.BackColor = SystemColors.ButtonFace;
             label6.Font = new Font("Modern No. 20", 11.249999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(-116, 97);
+            label6.Location = new Point(-76, 101);
             label6.Name = "label6";
             label6.Size = new Size(82, 17);
             label6.TabIndex = 18;
             label6.Text = "Inventario";
             // 
+            // listaInventario
+            // 
+            listaInventario.Location = new Point(23, 166);
+            listaInventario.Name = "listaInventario";
+            listaInventario.Size = new Size(631, 205);
+            listaInventario.TabIndex = 19;
+            listaInventario.UseCompatibleStateImageBehavior = false;
+            // 
             // ScchoolShopInventarioWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(635, 417);
+            ClientSize = new Size(675, 421);
+            Controls.Add(listaInventario);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -192,7 +192,6 @@
             Controls.Add(txtDescripcion);
             Controls.Add(txtCodigo);
             Controls.Add(button1);
-            Controls.Add(lista);
             Name = "ScchoolShopInventarioWF";
             Text = "SchoolShopInventarioWF";
             Load += ScchoolShopInventarioWF_Load;
@@ -202,7 +201,6 @@
 
         #endregion
         private ContextMenuStrip contextMenuStrip1;
-        private ListBox lista;
         private Button button1;
         private TextBox txtCodigo;
         private TextBox txtDescripcion;
@@ -216,5 +214,6 @@
         private Label label4;
         private Label label5;
         private Label label6;
+        private ListView listaInventario;
     }
 }
