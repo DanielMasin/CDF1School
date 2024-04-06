@@ -168,7 +168,7 @@
             label6.AutoSize = true;
             label6.BackColor = SystemColors.ButtonFace;
             label6.Font = new Font("Modern No. 20", 11.249999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(83, 97);
+            label6.Location = new Point(-116, 97);
             label6.Name = "label6";
             label6.Size = new Size(82, 17);
             label6.TabIndex = 18;
@@ -178,7 +178,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(834, 417);
+            ClientSize = new Size(635, 417);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
