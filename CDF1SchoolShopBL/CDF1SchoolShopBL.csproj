@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AgregarProductoBL.cs" />
+    <Compile Include="ComprasBL.cs" />
     <Compile Include="InventarioBL.cs" />
     <Compile Include="LoginBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
