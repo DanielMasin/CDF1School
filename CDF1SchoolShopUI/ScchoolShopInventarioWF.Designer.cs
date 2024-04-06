@@ -96,7 +96,6 @@
             cbCategoria.Name = "cbCategoria";
             cbCategoria.Size = new Size(212, 23);
             cbCategoria.TabIndex = 11;
-            cbCategoria.SelectedIndexChanged += cbCategoria_SelectedIndexChanged;
             // 
             // btnGuardar
             // 
@@ -106,7 +105,6 @@
             btnGuardar.TabIndex = 12;
             btnGuardar.Text = "Buscar";
             btnGuardar.UseVisualStyleBackColor = true;
-            btnGuardar.Click += btnGuardar_Click;
             // 
             // label1
             // 
