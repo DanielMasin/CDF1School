@@ -34,6 +34,7 @@
             dgMostrarProveedor = new DataGridView();
             btnAgregarProveedor = new Button();
             mtxtNumero = new MaskedTextBox();
+            btnAtras = new Button();
             ((System.ComponentModel.ISupportInitialize)dgMostrarProveedor).BeginInit();
             SuspendLayout();
             // 
@@ -61,6 +62,7 @@
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(341, 23);
             txtNombre.TabIndex = 2;
+            txtNombre.TextChanged += txtNombre_TextChanged;
             // 
             // dgMostrarProveedor
             // 
@@ -87,11 +89,22 @@
             mtxtNumero.Size = new Size(341, 23);
             mtxtNumero.TabIndex = 8;
             // 
+            // btnAtras
+            // 
+            btnAtras.Location = new Point(711, 404);
+            btnAtras.Name = "btnAtras";
+            btnAtras.Size = new Size(75, 23);
+            btnAtras.TabIndex = 9;
+            btnAtras.Text = "Atras";
+            btnAtras.UseVisualStyleBackColor = true;
+            btnAtras.Click += btnAtras_Click;
+            // 
             // SchoolShopProveedoresWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnAtras);
             Controls.Add(mtxtNumero);
             Controls.Add(btnAgregarProveedor);
             Controls.Add(dgMostrarProveedor);
@@ -113,5 +126,6 @@
         private DataGridView dgMostrarProveedor;
         private Button btnAgregarProveedor;
         private MaskedTextBox mtxtNumero;
+        private Button btnAtras;
     }
 }

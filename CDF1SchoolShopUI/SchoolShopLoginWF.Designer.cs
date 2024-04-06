@@ -80,7 +80,7 @@
             // 
             // btnMostrarContra
             // 
-
+            btnMostrarContra.Location = new Point(661, 244);
             btnMostrarContra.Name = "btnMostrarContra";
             btnMostrarContra.Size = new Size(42, 30);
             btnMostrarContra.TabIndex = 5;
