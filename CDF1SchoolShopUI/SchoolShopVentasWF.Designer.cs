@@ -75,7 +75,6 @@
             label3.Size = new Size(44, 17);
             label3.TabIndex = 3;
             label3.Text = "Precio";
-
             // 
             // txtCantidad
             // 
@@ -93,7 +92,7 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.BackColor = Color.IndianRed;
+            btnAgregar.BackColor = Color.WhiteSmoke;
             btnAgregar.Location = new Point(389, 188);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(75, 30);

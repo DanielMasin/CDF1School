@@ -132,6 +132,7 @@ namespace CDF1SchoolShopUI
                 var ListVentasBL = VentasBL.ObtenerTodosVentasEN();
                 dgSchoolShop.DataSource = null;
                 dgSchoolShop.DataSource = ListVentasBL;
+
             }
         }
     }
