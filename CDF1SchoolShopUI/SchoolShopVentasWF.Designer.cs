@@ -85,6 +85,7 @@
             txtCantidad.Name = "txtCantidad";
             txtCantidad.Size = new Size(322, 25);
             txtCantidad.TabIndex = 4;
+            txtCantidad.KeyPress += txtCantidad_KeyPress;
             // 
             // txtPrecio
             // 
