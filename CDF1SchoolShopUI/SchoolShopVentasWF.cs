@@ -125,6 +125,7 @@ namespace CDF1SchoolShopUI
                 Precio = Precio.ToString(),
 
             };
+
             if (VentasEN != null)
             {
                 var VentasBL = new VentasBL();
@@ -132,8 +133,27 @@ namespace CDF1SchoolShopUI
                 var ListVentasBL = VentasBL.ObtenerTodosVentasEN();
                 dgSchoolShop.DataSource = null;
                 dgSchoolShop.DataSource = ListVentasBL;
+
+                //calcular y mostrar el total de precio por cantidad 
+                CalcularTotalPrecioPorCantidad();
+            }
+
+        }
+        private void CalcularTotalPrecioPorCantidad()
+        {
+            foreach (DataGridViewRow row in dgSchoolShop.Rows)
+            {
+                //obtener el precio de la fila actual 
+                double Precio = Convert.ToDouble(row.Cells["Precio"].Value);
+                int Cantidad = Convert.ToInt32(row.Cells["Precio"].Value);
+
+                //Calcular el total de precio por cantidad
+                double Total = Precio * Cantidad;
+                //Mostrar el total de precio por cantidad en la nueva columna
+                row.Cells["TotalPrecioPorCantidad"].Value = Total;
             }
         }
+
 
         private void btnVentaCompleta_Click(object sender, EventArgs e)
         {
