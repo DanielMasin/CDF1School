@@ -7,7 +7,7 @@ using CDF1SchoolShopEN;
 
 namespace CDF1SchoolShopDAL
 {
-    public  class InventarioDAL
+    public class InventarioDAL
     {
         private List<InventarioEN> listaProductos;
 
@@ -26,6 +26,9 @@ namespace CDF1SchoolShopDAL
         public InventarioDAL()
         {
             listaProductos = new List<InventarioEN>();
+
+
         }
+        //Metodo para buscar un produto por codigo, precio, marca
     }
-}
+}    

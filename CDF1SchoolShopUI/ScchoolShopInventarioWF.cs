@@ -90,7 +90,7 @@ namespace CDF1SchoolShopUI
                 string marca = txtMarca.Text;
                 string producto = cbProducto.SelectedItem.ToString();
 
-                InventarioEN productoEncontrado =  InventarioDAL.Buscar(codigo, precio, marca, producto);
+                
             }
         }
     }

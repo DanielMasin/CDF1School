@@ -18,5 +18,4 @@ namespace CDF1SchoolShopEN
         public string[] Producto;
         public string[] Inversioneninventario;
     }
-
 }
