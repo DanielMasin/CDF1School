@@ -32,13 +32,11 @@
             contextMenuStrip1 = new ContextMenuStrip(components);
             button1 = new Button();
             txtCodigo = new TextBox();
-            txtDescripcion = new TextBox();
             txtPrecio = new TextBox();
-            txtExistencia = new TextBox();
+            txtMarca = new TextBox();
             cbProducto = new ComboBox();
-            btnGuardar = new Button();
+            btnBuscar = new Button();
             label1 = new Label();
-            label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
@@ -69,43 +67,37 @@
             txtCodigo.Size = new Size(195, 23);
             txtCodigo.TabIndex = 7;
             // 
-            // txtDescripcion
-            // 
-            txtDescripcion.Location = new Point(132, 66);
-            txtDescripcion.Name = "txtDescripcion";
-            txtDescripcion.Size = new Size(195, 23);
-            txtDescripcion.TabIndex = 8;
-            // 
             // txtPrecio
             // 
-            txtPrecio.Location = new Point(132, 115);
+            txtPrecio.Location = new Point(132, 66);
             txtPrecio.Name = "txtPrecio";
             txtPrecio.Size = new Size(195, 23);
             txtPrecio.TabIndex = 9;
             // 
-            // txtExistencia
+            // txtMarca
             // 
-            txtExistencia.Location = new Point(442, 24);
-            txtExistencia.Name = "txtExistencia";
-            txtExistencia.Size = new Size(212, 23);
-            txtExistencia.TabIndex = 10;
+            txtMarca.Location = new Point(132, 115);
+            txtMarca.Name = "txtMarca";
+            txtMarca.Size = new Size(195, 23);
+            txtMarca.TabIndex = 10;
             // 
             // cbProducto
             // 
             cbProducto.FormattingEnabled = true;
-            cbProducto.Location = new Point(442, 66);
+            cbProducto.Location = new Point(432, 22);
             cbProducto.Name = "cbProducto";
-            cbProducto.Size = new Size(212, 23);
+            cbProducto.Size = new Size(222, 23);
             cbProducto.TabIndex = 11;
             // 
-            // btnGuardar
+            // btnBuscar
             // 
-            btnGuardar.Location = new Point(442, 119);
-            btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(75, 23);
-            btnGuardar.TabIndex = 12;
-            btnGuardar.Text = "Buscar";
-            btnGuardar.UseVisualStyleBackColor = true;
+            btnBuscar.Location = new Point(432, 119);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(75, 23);
+            btnBuscar.TabIndex = 12;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // label1
             // 
@@ -116,19 +108,10 @@
             label1.TabIndex = 13;
             label1.Text = "Codigo";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(23, 74);
-            label2.Name = "label2";
-            label2.Size = new Size(69, 15);
-            label2.TabIndex = 14;
-            label2.Text = "Descripcion";
-            // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(23, 123);
+            label3.Location = new Point(23, 74);
             label3.Name = "label3";
             label3.Size = new Size(84, 15);
             label3.TabIndex = 15;
@@ -137,7 +120,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(359, 27);
+            label4.Location = new Point(23, 123);
             label4.Name = "label4";
             label4.Size = new Size(40, 15);
             label4.TabIndex = 16;
@@ -146,7 +129,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(359, 74);
+            label5.Location = new Point(360, 30);
             label5.Name = "label5";
             label5.Size = new Size(56, 15);
             label5.TabIndex = 17;
@@ -195,13 +178,11 @@
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(btnGuardar);
+            Controls.Add(btnBuscar);
             Controls.Add(cbProducto);
-            Controls.Add(txtExistencia);
+            Controls.Add(txtMarca);
             Controls.Add(txtPrecio);
-            Controls.Add(txtDescripcion);
             Controls.Add(txtCodigo);
             Controls.Add(button1);
             Name = "ScchoolShopInventarioWF";
@@ -215,13 +196,11 @@
         private ContextMenuStrip contextMenuStrip1;
         private Button button1;
         private TextBox txtCodigo;
-        private TextBox txtDescripcion;
         private TextBox txtPrecio;
-        private TextBox txtExistencia;
+        private TextBox txtMarca;
         private ComboBox cbProducto;
-        private Button btnGuardar;
+        private Button btnBuscar;
         private Label label1;
-        private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;

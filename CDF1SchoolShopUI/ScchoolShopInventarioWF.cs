@@ -69,13 +69,29 @@ namespace CDF1SchoolShopUI
                 ListViewItem item = new ListViewItem(producto.Codigo.ToString());
                 item.SubItems.Add(producto.Producto.ToString());
                 item.SubItems.Add(producto.Marca.ToString());
-                item.SubItems.Add(producto.Cantidad.ToString());
                 item.SubItems.Add(producto.Preciounitario.ToString());
                 item.SubItems.Add(producto.Inversioneninventario.ToString());
 
                 ListaInventario.Items.Add(item);
             }
+
+
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtCodigo.Text)&&
+                !string.IsNullOrWhiteSpace(txtPrecio.Text) &&
+                !string.IsNullOrWhiteSpace(txtMarca.Text) &&
+                cbProducto.SelectedIndex != -1) 
+            {
+                int codigo = int.Parse(txtCodigo.Text);
+                decimal precio = decimal.Parse(txtPrecio.Text);
+                string marca = txtMarca.Text;
+                string producto = cbProducto.SelectedItem.ToString();
+
+                InventarioEN productoEncontrado =  InventarioDAL.Buscar(codigo, precio, marca, producto);
+            }
+        }
     }
 }

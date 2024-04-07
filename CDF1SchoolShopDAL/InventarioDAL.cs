@@ -9,6 +9,8 @@ namespace CDF1SchoolShopDAL
 {
     public  class InventarioDAL
     {
+        private List<InventarioEN> listaProductos;
+
         private static List<InventarioEN> ListInventarioEN = new List<InventarioEN>();
 
         public void GuardarInventarioEN(InventarioEN pInventarioEN)
@@ -19,6 +21,11 @@ namespace CDF1SchoolShopDAL
         public List<InventarioEN> ObtenerTodosInventarioEN()
         {
             return ListInventarioEN;
+        }
+
+        public InventarioDAL()
+        {
+            listaProductos = new List<InventarioEN>();
         }
     }
 }
