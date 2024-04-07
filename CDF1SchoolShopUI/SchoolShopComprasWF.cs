@@ -15,6 +15,12 @@ namespace CDF1SchoolShopUI
         public SchoolShopComprasWF()
         {
             InitializeComponent();
+            cbProducto.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void cbProducto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

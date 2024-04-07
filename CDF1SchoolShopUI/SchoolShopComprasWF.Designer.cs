@@ -89,6 +89,7 @@
             cbProducto.Name = "cbProducto";
             cbProducto.Size = new Size(160, 23);
             cbProducto.TabIndex = 4;
+            cbProducto.SelectedIndexChanged += cbProducto_SelectedIndexChanged;
             // 
             // cbCantidad
             // 
