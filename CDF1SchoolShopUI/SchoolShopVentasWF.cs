@@ -189,6 +189,7 @@ namespace CDF1SchoolShopUI
         {
             if  (!Char.IsControl(e.KeyChar) && !Char.IsDigit(e.KeyChar))
             {
+                //Si la tecla presionada no es un numero y no es una tecla de control (Como retroceso o suprimir), se cancela la accion.
                 e.Handled = true;
             }
         }
