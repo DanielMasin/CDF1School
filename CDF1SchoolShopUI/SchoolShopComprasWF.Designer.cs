@@ -148,10 +148,11 @@
             // 
             btnAgregar.Location = new Point(229, 229);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(75, 23);
+            btnAgregar.Size = new Size(147, 23);
             btnAgregar.TabIndex = 9;
             btnAgregar.Text = "Agregar Compras";
             btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // SchoolShopComprasWF
             // 
