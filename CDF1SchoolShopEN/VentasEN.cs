@@ -9,6 +9,7 @@ namespace CDF1SchoolShopEN
     public class VentasEN
     {
         public int id { get; set; }
+        public int Codigo { get; set; }
         public string Producto { get; set; }
         public string Precio { get; set; } 
         public string Cantidad { get; set; }

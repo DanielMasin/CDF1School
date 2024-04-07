@@ -73,7 +73,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(29, 142);
+            label3.Location = new Point(29, 134);
             label3.Name = "label3";
             label3.Size = new Size(44, 17);
             label3.TabIndex = 3;
@@ -95,9 +95,9 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(18, 191);
+            btnAgregar.Location = new Point(18, 197);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(75, 29);
+            btnAgregar.Size = new Size(75, 32);
             btnAgregar.TabIndex = 6;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = false;
@@ -116,7 +116,7 @@
             btnAtras.BackColor = Color.White;
             btnAtras.Location = new Point(423, 197);
             btnAtras.Name = "btnAtras";
-            btnAtras.Size = new Size(75, 23);
+            btnAtras.Size = new Size(75, 32);
             btnAtras.TabIndex = 8;
             btnAtras.Text = "Atras";
             btnAtras.UseVisualStyleBackColor = false;
@@ -127,7 +127,7 @@
             btnVentaCompleta.BackColor = Color.White;
             btnVentaCompleta.Location = new Point(121, 197);
             btnVentaCompleta.Name = "btnVentaCompleta";
-            btnVentaCompleta.Size = new Size(150, 23);
+            btnVentaCompleta.Size = new Size(150, 32);
             btnVentaCompleta.TabIndex = 9;
             btnVentaCompleta.Text = "Venta Completada";
             btnVentaCompleta.UseVisualStyleBackColor = false;
@@ -138,7 +138,7 @@
             btnLimpiar.BackColor = Color.White;
             btnLimpiar.Location = new Point(301, 197);
             btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(92, 23);
+            btnLimpiar.Size = new Size(92, 32);
             btnLimpiar.TabIndex = 10;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = false;

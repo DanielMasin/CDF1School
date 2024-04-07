@@ -24,9 +24,6 @@ namespace CDF1SchoolShopUI
             this.Close();
         }
 
-
-
-        private void comprasToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             SchoolShopComprasWF ComprasFormulario = new SchoolShopComprasWF();
             ComprasFormulario.Show();
