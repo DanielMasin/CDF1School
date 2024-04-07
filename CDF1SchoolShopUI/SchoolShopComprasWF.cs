@@ -39,7 +39,7 @@ namespace CDF1SchoolShopUI
                 string Costo = cbCosto.Text;
 
                 // Ahora usamos la capa de negocio para agregar la compra
-                ComprasBL.AgregarCompra(Producto, Cantidad, Proveedor, Costo);
+               //CompraBL.AgregarCompra(Producto, Cantidad, Proveedor, Costo);
 
                 // Asumiendo que quieras seguir mostrando en la interfaz:
                 dataGridView1.Rows.Add(Producto, Cantidad, Proveedor, "$" + Costo);

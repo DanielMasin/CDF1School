@@ -24,12 +24,10 @@ namespace CDF1SchoolShopUI
             this.Close();
         }
 
-        
 
-       
 
         
     }
-}
+
 
 

@@ -150,7 +150,7 @@ namespace CDF1SchoolShopUI
                 //Calcular el total de precio por cantidad
                 double Total = Precio * Cantidad;
                 //Mostrar el total de precio por cantidad en la nueva columna
-             row.Cells["Total"].Value = Total.ToString("N3");
+                row.Cells["Total"].Value = Total.ToString("N3");
             }
         }
 
@@ -170,11 +170,11 @@ namespace CDF1SchoolShopUI
                 Total += Precio * Cantidad;
             }
             MessageBox.Show("¡Venta Completada!\n\nSu total de compra es " + Total.ToString("c"), "Venta Completada");
-        } 
+        }
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             cbProducto.SelectedIndex = 0;
-            txtCantidad.Text = ""; 
+            txtCantidad.Text = "";
             txtPrecio.Text = "";
         }
 
@@ -183,6 +183,15 @@ namespace CDF1SchoolShopUI
             SchoolShopMenuWF MenuFormulario = new SchoolShopMenuWF();
             MenuFormulario.Show();
             this.Close();
+        }
+
+        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if  (!Char.IsControl(e.KeyChar) && !Char.IsDigit(e.KeyChar))
+            {
+                //Si la tecla presionada no es un numero y no es una tecla de control (Como retroceso o suprimir), se cancela la accion.
+                e.Handled = true;
+            }
         }
     }
 }
