@@ -7,37 +7,62 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CDF1SchoolShopEN;
+using CDF1SchoolShopBL;
+using CDF1SchoolShopDAL;
+
 
 namespace CDF1SchoolShopUI
 {
     public partial class ScchoolShopInventarioWF : Form
     {
+        private InventarioDAL inventarioDAL;
         public ScchoolShopInventarioWF()
         {
             InitializeComponent();
+            inventarioDAL = new InventarioDAL();//instancia de DAL
         }
 
         private void ScchoolShopInventarioWF_Load(object sender, EventArgs e)
         {
-            cbCategoria.Items.Add("Reglas");
-            cbCategoria.Items.Add("Lapiceros");
-            cbCategoria.Items.Add("Lapiz");
-            cbCategoria.Items.Add("Borradores Grandes");
-            cbCategoria.Items.Add("Sacapunta de metal");
-            cbCategoria.Items.Add("Pliegos de cartulina");
-            cbCategoria.Items.Add("Resma Papel bond");
-            cbCategoria.Items.Add("Fastener Plastico");
-            cbCategoria.Items.Add("Tijeras");
-            cbCategoria.Items.Add("Cuaderno#1 Espiral");
-            cbCategoria.Items.Add("Cuaderno #3");
-            cbCategoria.Items.Add("Caja de colores 12U");
-            cbCategoria.Items.Add("Caja de colores 24U");
-            cbCategoria.Items.Add("Plumones");
-            cbCategoria.Items.Add("Silicon Liquido");
-            cbCategoria.Items.Add("Hojas de foami");
-            cbCategoria.Items.Add("Hojas de foami brillantes");
-            cbCategoria.Items.Add("Corrector");
-            cbCategoria.Items.Add("Tirro");
+            cbProducto.Items.Add("Reglas");
+            cbProducto.Items.Add("Lapiceros");
+            cbProducto.Items.Add("Lapiz");
+            cbProducto.Items.Add("Borradores Grandes");
+            cbProducto.Items.Add("Sacapunta de metal");
+            cbProducto.Items.Add("Pliegos de cartulina");
+            cbProducto.Items.Add("Resma Papel bond");
+            cbProducto.Items.Add("Fastener Plastico");
+            cbProducto.Items.Add("Tijeras");
+            cbProducto.Items.Add("Cuaderno#1 Espiral");
+            cbProducto.Items.Add("Cuaderno #3");
+            cbProducto.Items.Add("Caja de colores 12U");
+            cbProducto.Items.Add("Caja de colores 24U");
+            cbProducto.Items.Add("Plumones");
+            cbProducto.Items.Add("Silicon Liquido");
+            cbProducto.Items.Add("Hojas de foami");
+            cbProducto.Items.Add("Hojas de foami brillantes");
+            cbProducto.Items.Add("Corrector");
+            cbProducto.Items.Add("Tirro");
+
+            MostrarInventarioDAL();
         }
+
+
+        private void listaInventario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ListaInventario.Columns.Clear();//borra duplicados
+
+            ListaInventario.Columns.Add("Codigo", 200);
+            ListaInventario.Columns.Add("Categoria", 150);
+            ListaInventario.Columns.Add("Marca", 200);
+            ListaInventario.Columns.Add("Cantidad", 300);
+            ListaInventario.Columns.Add("Precio unitario", 200);
+            ListaInventario.Columns.Add("Inversion en inventario", 5, 000);
+
+
+        }
+
+        
     }
 }

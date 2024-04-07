@@ -35,7 +35,7 @@
             txtDescripcion = new TextBox();
             txtPrecio = new TextBox();
             txtExistencia = new TextBox();
-            cbCategoria = new ComboBox();
+            cbProducto = new ComboBox();
             btnGuardar = new Button();
             label1 = new Label();
             label2 = new Label();
@@ -43,7 +43,8 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            listaInventario = new ListView();
+            ListaInventario = new ListView();
+            button2 = new Button();
             SuspendLayout();
             // 
             // contextMenuStrip1
@@ -89,17 +90,17 @@
             txtExistencia.Size = new Size(212, 23);
             txtExistencia.TabIndex = 10;
             // 
-            // cbCategoria
+            // cbProducto
             // 
-            cbCategoria.FormattingEnabled = true;
-            cbCategoria.Location = new Point(442, 66);
-            cbCategoria.Name = "cbCategoria";
-            cbCategoria.Size = new Size(212, 23);
-            cbCategoria.TabIndex = 11;
+            cbProducto.FormattingEnabled = true;
+            cbProducto.Location = new Point(442, 66);
+            cbProducto.Name = "cbProducto";
+            cbProducto.Size = new Size(212, 23);
+            cbProducto.TabIndex = 11;
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(579, 119);
+            btnGuardar.Location = new Point(442, 119);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(75, 23);
             btnGuardar.TabIndex = 12;
@@ -147,9 +148,9 @@
             label5.AutoSize = true;
             label5.Location = new Point(359, 74);
             label5.Name = "label5";
-            label5.Size = new Size(58, 15);
+            label5.Size = new Size(56, 15);
             label5.TabIndex = 17;
-            label5.Text = "Categoria";
+            label5.Text = "Producto";
             // 
             // label6
             // 
@@ -163,20 +164,32 @@
             label6.TabIndex = 18;
             label6.Text = "Inventario";
             // 
-            // listaInventario
+            // ListaInventario
             // 
-            listaInventario.Location = new Point(23, 166);
-            listaInventario.Name = "listaInventario";
-            listaInventario.Size = new Size(631, 205);
-            listaInventario.TabIndex = 19;
-            listaInventario.UseCompatibleStateImageBehavior = false;
+            ListaInventario.BackColor = SystemColors.InactiveBorder;
+            ListaInventario.Location = new Point(23, 166);
+            ListaInventario.Name = "ListaInventario";
+            ListaInventario.Size = new Size(631, 205);
+            ListaInventario.TabIndex = 19;
+            ListaInventario.UseCompatibleStateImageBehavior = false;
+            ListaInventario.SelectedIndexChanged += listaInventario_SelectedIndexChanged;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(524, 119);
+            button2.Name = "button2";
+            button2.Size = new Size(130, 23);
+            button2.TabIndex = 20;
+            button2.Text = "Mostrar Inventario";
+            button2.UseVisualStyleBackColor = true;
             // 
             // ScchoolShopInventarioWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(675, 421);
-            Controls.Add(listaInventario);
+            Controls.Add(button2);
+            Controls.Add(ListaInventario);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -184,7 +197,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnGuardar);
-            Controls.Add(cbCategoria);
+            Controls.Add(cbProducto);
             Controls.Add(txtExistencia);
             Controls.Add(txtPrecio);
             Controls.Add(txtDescripcion);
@@ -204,7 +217,7 @@
         private TextBox txtDescripcion;
         private TextBox txtPrecio;
         private TextBox txtExistencia;
-        private ComboBox cbCategoria;
+        private ComboBox cbProducto;
         private Button btnGuardar;
         private Label label1;
         private Label label2;
@@ -212,6 +225,7 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private ListView listaInventario;
+        private ListView ListaInventario;
+        private Button button2;
     }
 }
