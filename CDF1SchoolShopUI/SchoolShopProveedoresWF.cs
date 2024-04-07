@@ -14,6 +14,7 @@ namespace CDF1SchoolShopUI
 {
     public partial class SchoolShopProveedoresWF : Form
     {
+       
         public SchoolShopProveedoresWF()
         {
             InitializeComponent();
@@ -36,7 +37,9 @@ namespace CDF1SchoolShopUI
                 dgMostrarProveedor.DataSource = null;
                 dgMostrarProveedor.DataSource = ListProveedoresBL;
             }
+            
         }
+        
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
