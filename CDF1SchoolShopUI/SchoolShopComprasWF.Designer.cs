@@ -36,6 +36,12 @@
             cbCantidad = new ComboBox();
             cbProveedor = new ComboBox();
             cbCosto = new ComboBox();
+            dataGridView1 = new DataGridView();
+            Producto = new DataGridViewTextBoxColumn();
+            Cantidad = new DataGridViewTextBoxColumn();
+            Proveedor = new DataGridViewTextBoxColumn();
+            Costo = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -107,11 +113,41 @@
             cbCosto.Size = new Size(160, 23);
             cbCosto.TabIndex = 7;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Producto, Cantidad, Proveedor, Costo });
+            dataGridView1.Location = new Point(82, 269);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(450, 150);
+            dataGridView1.TabIndex = 8;
+            // 
+            // Producto
+            // 
+            Producto.HeaderText = "producto";
+            Producto.Name = "Producto";
+            // 
+            // Cantidad
+            // 
+            Cantidad.HeaderText = "cantidad";
+            Cantidad.Name = "Cantidad";
+            // 
+            // Proveedor
+            // 
+            Proveedor.HeaderText = "proveedor";
+            Proveedor.Name = "Proveedor";
+            // 
+            // Costo
+            // 
+            Costo.HeaderText = "costo";
+            Costo.Name = "Costo";
+            // 
             // SchoolShopComprasWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(dataGridView1);
             Controls.Add(cbCosto);
             Controls.Add(cbProveedor);
             Controls.Add(cbCantidad);
@@ -122,6 +158,7 @@
             Controls.Add(label1);
             Name = "SchoolShopComprasWF";
             Text = "SchoolShopComprasWF";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -136,5 +173,10 @@
         private ComboBox cbCantidad;
         private ComboBox cbProveedor;
         private ComboBox cbCosto;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Producto;
+        private DataGridViewTextBoxColumn Cantidad;
+        private DataGridViewTextBoxColumn Proveedor;
+        private DataGridViewTextBoxColumn Costo;
     }
 }
