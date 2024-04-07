@@ -41,6 +41,7 @@
             Cantidad = new DataGridViewTextBoxColumn();
             Proveedor = new DataGridViewTextBoxColumn();
             Costo = new DataGridViewTextBoxColumn();
+            btnAgregar = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -142,11 +143,21 @@
             Costo.HeaderText = "costo";
             Costo.Name = "Costo";
             // 
+            // btnAgregar
+            // 
+            btnAgregar.Location = new Point(229, 229);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(75, 23);
+            btnAgregar.TabIndex = 9;
+            btnAgregar.Text = "Agregar Compras";
+            btnAgregar.UseVisualStyleBackColor = true;
+            // 
             // SchoolShopComprasWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnAgregar);
             Controls.Add(dataGridView1);
             Controls.Add(cbCosto);
             Controls.Add(cbProveedor);
@@ -178,5 +189,6 @@
         private DataGridViewTextBoxColumn Cantidad;
         private DataGridViewTextBoxColumn Proveedor;
         private DataGridViewTextBoxColumn Costo;
+        private Button btnAgregar;
     }
 }
