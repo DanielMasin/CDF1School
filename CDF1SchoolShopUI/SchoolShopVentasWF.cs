@@ -92,7 +92,7 @@ namespace CDF1SchoolShopUI
         private void SchoolShopVentasWF_Load(object sender, EventArgs e)
         {
             txtPrecio.Enabled = false;
-
+            //llenar combo
             cbProducto.Items.Add("Seleccione producto");
             cbProducto.Items.Add("Regla");
             cbProducto.Items.Add("Lapicero");
@@ -135,25 +135,24 @@ namespace CDF1SchoolShopUI
                 dgSchoolShop.DataSource = ListVentasBL;
 
                 //calcular y mostrar el total de precio por cantidad 
-                CalcularTotalPrecioPorCantidad();
+                Total();
             }
 
         }
-        private void CalcularTotalPrecioPorCantidad()
+        private void Total()
         {
             foreach (DataGridViewRow row in dgSchoolShop.Rows)
             {
                 //obtener el precio de la fila actual 
                 double Precio = Convert.ToDouble(row.Cells["Precio"].Value);
-                int Cantidad = Convert.ToInt32(row.Cells["Precio"].Value);
+                int Cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value);
 
                 //Calcular el total de precio por cantidad
                 double Total = Precio * Cantidad;
                 //Mostrar el total de precio por cantidad en la nueva columna
-                row.Cells["TotalPrecioPorCantidad"].Value = Total;
+             row.Cells["Total"].Value = Total.ToString("N3");
             }
         }
-
 
         private void btnVentaCompleta_Click(object sender, EventArgs e)
         {
@@ -171,7 +170,7 @@ namespace CDF1SchoolShopUI
                 Total += Precio * Cantidad;
             }
             MessageBox.Show("¡Venta Completada!\n\nSu total de compra es " + Total.ToString("c"), "Venta Completada");
-        }
+        } 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             cbProducto.SelectedIndex = 0;
