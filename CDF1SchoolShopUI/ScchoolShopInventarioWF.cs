@@ -22,7 +22,7 @@ namespace CDF1SchoolShopUI
             InitializeComponent();
             inventarioDAL = new InventarioDAL();//instancia de DAL
         }
-
+        //Carga un combobox 
         private void ScchoolShopInventarioWF_Load(object sender, EventArgs e)
         {
             cbProducto.Items.Add("Reglas");
@@ -46,6 +46,7 @@ namespace CDF1SchoolShopUI
             cbProducto.Items.Add("Tirro");
         }
 
+        //Borra y da una nueva linea
         private void listaInventario_SelectedIndexChanged(object sender, EventArgs e)
         {
             ListaInventario.Columns.Clear();//borra duplicados
@@ -57,7 +58,7 @@ namespace CDF1SchoolShopUI
             ListaInventario.Columns.Add("Precio unitario", 200);
             ListaInventario.Columns.Add("Inversion en inventario", 5, 000);
         }
-
+        //Muestra el inventario en ListView
         private void btnMostrarInventario_Click(object sender, EventArgs e)
         {
             List<InventarioEN> inventario = inventarioDAL.ObtenerTodosInventarioEN();//Obtener datos de dal
@@ -77,7 +78,7 @@ namespace CDF1SchoolShopUI
 
 
         }
-
+        //Buscar un producto en especifico segun los datos obtenidos 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txtCodigo.Text)&&

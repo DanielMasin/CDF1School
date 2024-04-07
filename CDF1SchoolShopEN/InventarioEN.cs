@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace CDF1SchoolShopEN
 {
+    //Arreglos para almacenar la informacion de productos de la mini tienda
     public class InventarioEN
     {
         public int id;
         public int[] Registro;
         public string[] Codigo;
-        public int[] Cantidad;
         public string[] Preciounitario;
         public int[] Marca;
         public string[] Producto;
