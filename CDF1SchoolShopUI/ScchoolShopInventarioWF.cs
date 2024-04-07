@@ -61,8 +61,6 @@ namespace CDF1SchoolShopUI
             ListaInventario.Columns.Add("Inversion en inventario", 5, 000);
 
 
-        }
-
-        
+        } 
     }
 }
