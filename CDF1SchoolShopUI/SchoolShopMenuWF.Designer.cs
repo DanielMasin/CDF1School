@@ -69,7 +69,7 @@
             AgregarVentatoolStripMenuItem2.Name = "AgregarVentatoolStripMenuItem2";
             AgregarVentatoolStripMenuItem2.Size = new Size(180, 22);
             AgregarVentatoolStripMenuItem2.Text = "Agregar Venta";
-            AgregarVentatoolStripMenuItem2.Click += AgregarVentatoolStripMenuItem2_Click;
+           // AgregarVentatoolStripMenuItem2.Click += AgregarVentatoolStripMenuItem2_Click;
             // 
             // productosToolStripMenuItem1
             // 
