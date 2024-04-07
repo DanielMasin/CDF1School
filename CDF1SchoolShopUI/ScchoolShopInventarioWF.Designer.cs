@@ -44,7 +44,7 @@
             label5 = new Label();
             label6 = new Label();
             ListaInventario = new ListView();
-            button2 = new Button();
+            btnMostrarInventario = new Button();
             SuspendLayout();
             // 
             // contextMenuStrip1
@@ -174,21 +174,22 @@
             ListaInventario.UseCompatibleStateImageBehavior = false;
             ListaInventario.SelectedIndexChanged += listaInventario_SelectedIndexChanged;
             // 
-            // button2
+            // btnMostrarInventario
             // 
-            button2.Location = new Point(524, 119);
-            button2.Name = "button2";
-            button2.Size = new Size(130, 23);
-            button2.TabIndex = 20;
-            button2.Text = "Mostrar Inventario";
-            button2.UseVisualStyleBackColor = true;
+            btnMostrarInventario.Location = new Point(524, 119);
+            btnMostrarInventario.Name = "btnMostrarInventario";
+            btnMostrarInventario.Size = new Size(130, 23);
+            btnMostrarInventario.TabIndex = 20;
+            btnMostrarInventario.Text = "Mostrar Inventario";
+            btnMostrarInventario.UseVisualStyleBackColor = true;
+            btnMostrarInventario.Click += btnMostrarInventario_Click;
             // 
             // ScchoolShopInventarioWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(675, 421);
-            Controls.Add(button2);
+            Controls.Add(btnMostrarInventario);
             Controls.Add(ListaInventario);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -226,6 +227,6 @@
         private Label label5;
         private Label label6;
         private ListView ListaInventario;
-        private Button button2;
+        private Button btnMostrarInventario;
     }
 }

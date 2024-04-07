@@ -44,23 +44,38 @@ namespace CDF1SchoolShopUI
             cbProducto.Items.Add("Hojas de foami brillantes");
             cbProducto.Items.Add("Corrector");
             cbProducto.Items.Add("Tirro");
-
-            MostrarInventarioDAL();
         }
-
 
         private void listaInventario_SelectedIndexChanged(object sender, EventArgs e)
         {
             ListaInventario.Columns.Clear();//borra duplicados
 
             ListaInventario.Columns.Add("Codigo", 200);
-            ListaInventario.Columns.Add("Categoria", 150);
+            ListaInventario.Columns.Add("Producto", 150);
             ListaInventario.Columns.Add("Marca", 200);
             ListaInventario.Columns.Add("Cantidad", 300);
             ListaInventario.Columns.Add("Precio unitario", 200);
             ListaInventario.Columns.Add("Inversion en inventario", 5, 000);
+        }
 
+        private void btnMostrarInventario_Click(object sender, EventArgs e)
+        {
+            List<InventarioEN> inventario = inventarioDAL.ObtenerTodosInventarioEN();//Obtener datos de dal
 
-        } 
+            ListaInventario.Items.Clear();
+
+            foreach (InventarioEN producto in inventario)
+            {
+                ListViewItem item = new ListViewItem(producto.Codigo.ToString());
+                item.SubItems.Add(producto.Producto.ToString());
+                item.SubItems.Add(producto.Marca.ToString());
+                item.SubItems.Add(producto.Cantidad.ToString());
+                item.SubItems.Add(producto.Preciounitario.ToString());
+                item.SubItems.Add(producto.Inversioneninventario.ToString());
+
+                ListaInventario.Items.Add(item);
+            }
+        }
+
     }
 }

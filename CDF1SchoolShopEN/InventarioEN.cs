@@ -12,10 +12,11 @@ namespace CDF1SchoolShopEN
         public int id;
         public int[] Registro;
         public string[] Codigo;
-        public string[] Descripcion;
-        public string[] Precio;
+        public int[] Cantidad;
+        public string[] Preciounitario;
         public int[] Marca;
-        public string[] Categoria;
+        public string[] Producto;
+        public string[] Inversioneninventario;
     }
 
 }
