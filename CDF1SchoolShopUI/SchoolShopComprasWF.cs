@@ -15,7 +15,7 @@ namespace CDF1SchoolShopUI
 {
     public partial class SchoolShopComprasWF : Form
     {
-
+        public event EventHandler ComprasRealizada;
         public SchoolShopComprasWF(SchoolShopProveedoresWF _ProveedoresForm)
         {
             InitializeComponent();
@@ -48,6 +48,7 @@ namespace CDF1SchoolShopUI
             {
                 MessageBox.Show("Por favor, selecciona un valor en todos los campos.");
             }
+            ComprasRealizada?.Invoke(this, EventArgs.Empty);
         }
 
         private void txtCantidad_TextChanged(object sender, EventArgs e)

@@ -89,11 +89,23 @@ namespace CDF1SchoolShopUI
 
         }
 
-        private void btnAgregarCompra_Click(object sender, EventArgs e)
+
+
+        
+        
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            SchoolShopMenuWF MenuFormulario = new SchoolShopMenuWF();
+            MenuFormulario.Show();
+            this.Close();
+        }
+
+        private void btnAgregarCompra_Click_1(object sender, EventArgs e)
         {
             //Obten el codigo y cantidad de clase de compras
             int Codigo = int.Parse(txtCodigo.Text);
-            int Cantidad = int.Parse(txtCantidad).Text);
+            int Cantidad = int.Parse(txtCantidad),Text),
 
             //Agregar compra al inventario
             btnAgregarCompra(Codigo.Cantidad);
@@ -101,8 +113,28 @@ namespace CDF1SchoolShopUI
             //Actualizar el listView
             ActualizarListaInventario();
         }
+        private ComprasForm ComprasForm;//LLamo los dos eventos
+        private VentasForm VentasForm;
 
-        private void btnAgregarVenta_Click(object sender, EventArgs e)
+        public InventarioForm(ComprasForm ComprasForm, VentasForm VentasForm)
+        {
+            this.ComprasForm = ComprasForm;
+            this.VentasForm = VentasForm;
+
+            ComprasForm.ComprasRealizada += ComprasForm_CompraRealizada;
+            VentasForm.Ventascompleta += VentasForm_VentaCompleta;
+        }
+
+        private void ComprasForm_CompraRealizada(object sender, EventArgs e)
+        {
+            ActualizarInventario();
+        }
+        private void VentasForm_VentaCompleta(object sender, EventArgs e)
+        {
+            ActualizarInventario();
+        }
+
+        private void btnAgregarVenta_Click_1(object sender, EventArgs e)
         {
             int Codigo = int.Parse(txtCodigo.Text);
             int cantidad = int.Parse(txtCantidad.Text);
@@ -112,13 +144,6 @@ namespace CDF1SchoolShopUI
 
             // Actualiza el ListView
             ActualizarListView();
-        }
-
-        private void btnAtras_Click(object sender, EventArgs e)
-        {
-            SchoolShopMenuWF MenuFormulario = new SchoolShopMenuWF();
-            MenuFormulario.Show();
-            this.Close();
         }
     }
 }
