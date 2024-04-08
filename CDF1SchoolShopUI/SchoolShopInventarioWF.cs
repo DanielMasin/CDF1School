@@ -1,4 +1,5 @@
-﻿using CDF1SchoolShopDAL;
+﻿using CDF1SchoolShopBL;
+using CDF1SchoolShopDAL;
 using CDF1SchoolShopEN;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,13 @@ namespace CDF1SchoolShopUI
     public partial class SchoolShopInventarioWF : Form
     {
         private InventarioDAL inventarioDAL;
+        private SchoolShopComprasWF SchoolShopComprasWF;//LLamo los dos eventos
+        private SchoolShopVentasWF SchoolShopVentasWF;
+
         public SchoolShopInventarioWF()
         {
             InitializeComponent();
-            inventarioDAL = new InventarioDAL();//instancia de DAL
+            inventarioDAL = new InventarioDAL();
         }
 
 
@@ -89,36 +93,46 @@ namespace CDF1SchoolShopUI
 
         }
 
-        private void btnAgregarCompra_Click(object sender, EventArgs e)
-        {
-            //Obten el codigo y cantidad de clase de compras
-            int Codigo = int.Parse(txtCodigo.Text);
-            int Cantidad = int.Parse(txtCantidad).Text);
+        
 
-            //Agregar compra al inventario
-            btnAgregarCompra(Codigo.Cantidad);
 
-            //Actualizar el listView
-            ActualizarListaInventario();
-        }
-
-        private void btnAgregarVenta_Click(object sender, EventArgs e)
-        {
-            int Codigo = int.Parse(txtCodigo.Text);
-            int cantidad = int.Parse(txtCantidad.Text);
-
-            // Agrega la venta al inventario
-            AgregarVenta(codigo, cantidad);
-
-            // Actualiza el ListView
-            ActualizarListView();
-        }
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
             SchoolShop1MenuWF MenuFormulario = new SchoolShop1MenuWF();
             MenuFormulario.Show();
             this.Close();
+        }
+
+        private void btnAgregarCompra_Click_1(object sender, EventArgs e)
+        {
+            int Codigo = int.Parse(txtCodigo.Text);
+            int Cantidad = int.Parse(txtCantidad.Text);
+
+            ComprasBL.AgregarCompra(Cantidad);
+
+            // Actualizar el ListView
+            btnMostrarInventario_Click(sender, e); // Llamar al método para mostrar el inventario
+        }
+
+        private void btnAgregarVenta_Click_1(object sender, EventArgs e)
+        {
+            int Codigo = int.Parse(txtCodigo.Text);
+            int Cantidad = int.Parse(txtCantidad.Text);
+
+            // Agrega la venta al inventario 
+            VentasBL.AgregarVentas(Cantidad);
+
+            // Actualizar el ListView (si es necesario)
+            btnMostrarInventario_Click(sender, e); //
+        }
+        public SchoolShopInventarioWF(SchoolShopComprasWF ComprasForm, SchoolShopVentasWF VentasForm)
+        {
+            this.SchoolShopComprasWF = ComprasForm;
+            this.SchoolShopVentasWF = VentasForm;
+
+            ComprasForm.ComprasRealizada += ComprasForm_CompraRealizada;
+            VentasForm.Ventascompleta += VentasForm_VentaCompleta;
         }
     }
 }

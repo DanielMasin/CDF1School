@@ -11,7 +11,7 @@ namespace CDF1SchoolShopBL
 {
     public class ComprasBL
     {
-        public static void AgregarCompra(string Producto, int Cantidad, string Proveedor, string costo)
+        public void AgregarCompra(string Producto, int Cantidad, string Proveedor, string costo)
         {
             // Aquí puedes aplicar lógicas de negocio, como validaciones o cálculos
             ComprasDAL.AgregarCompra(Producto, Cantidad, Proveedor, costo);

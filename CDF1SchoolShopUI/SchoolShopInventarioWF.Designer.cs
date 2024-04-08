@@ -128,6 +128,7 @@
             btnAgregarCompra.TabIndex = 12;
             btnAgregarCompra.Text = "Actualizar Comprar";
             btnAgregarCompra.UseVisualStyleBackColor = true;
+            btnAgregarCompra.Click += btnAgregarCompra_Click_1;
             // 
             // btnAgregarVenta
             // 
@@ -137,7 +138,7 @@
             btnAgregarVenta.TabIndex = 13;
             btnAgregarVenta.Text = "Actualizar Venta";
             btnAgregarVenta.UseVisualStyleBackColor = true;
-            btnAgregarVenta.Click += btnAgregarCompra_Click;
+            btnAgregarVenta.Click += btnAgregarVenta_Click_1;
             // 
             // btnAtras
             // 
