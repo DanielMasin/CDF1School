@@ -91,29 +91,29 @@ namespace CDF1SchoolShopUI
 
         }
 
-        private void btnAgregarwComprar_Click(object sender, EventArgs e)
+        private void btnAgregarCompra_Click(object sender, EventArgs e)
         {
             //Obten el codigo y cantidad de clase de compras
             int Codigo = int.Parse(txtCodigo.Text);
             int Cantidad = int.Parse(txtCantidad).Text);
 
             //Agregar compra al inventario
-            //btnAgregarCompra(Codigo.Cantidad);
+            btnAgregarCompra(Codigo.Cantidad);
 
             //Actualizar el listView
-            //ActualizarListaInventario();
+            ActualizarListaInventario();
         }
 
-        private void btnAgregarCompra_Click(object sender, EventArgs e)
+        private void btnAgregarVenta_Click(object sender, EventArgs e)
         {
             int Codigo = int.Parse(txtCodigo.Text);
             int cantidad = int.Parse(txtCantidad.Text);
 
             // Agrega la venta al inventario
-            //AgregarVenta(codigo, cantidad);
+            AgregarVenta(codigo, cantidad);
 
             // Actualiza el ListView
-            //ActualizarListView();
+            ActualizarListView();
         }
     }
 }

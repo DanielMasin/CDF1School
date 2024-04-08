@@ -39,8 +39,8 @@
             btnBuscar = new Button();
             btnMostrarInventario = new Button();
             ListaInventario = new ListView();
-            btnAgregarwComprar = new Button();
             btnAgregarCompra = new Button();
+            btnAgregarVenta = new Button();
             SuspendLayout();
             // 
             // label1
@@ -137,33 +137,33 @@
             ListaInventario.UseCompatibleStateImageBehavior = false;
             ListaInventario.SelectedIndexChanged += ListaInventario_SelectedIndexChanged;
             // 
-            // btnAgregarwComprar
-            // 
-            btnAgregarwComprar.Location = new Point(62, 161);
-            btnAgregarwComprar.Name = "btnAgregarwComprar";
-            btnAgregarwComprar.Size = new Size(129, 23);
-            btnAgregarwComprar.TabIndex = 12;
-            btnAgregarwComprar.Text = "Actualizar Comprar";
-            btnAgregarwComprar.UseVisualStyleBackColor = true;
-            btnAgregarwComprar.Click += btnAgregarwComprar_Click;
-            // 
             // btnAgregarCompra
             // 
-            btnAgregarCompra.Location = new Point(230, 161);
+            btnAgregarCompra.Location = new Point(62, 161);
             btnAgregarCompra.Name = "btnAgregarCompra";
-            btnAgregarCompra.Size = new Size(110, 23);
-            btnAgregarCompra.TabIndex = 13;
-            btnAgregarCompra.Text = "Actualizar Venta";
+            btnAgregarCompra.Size = new Size(129, 23);
+            btnAgregarCompra.TabIndex = 12;
+            btnAgregarCompra.Text = "Actualizar Comprar";
             btnAgregarCompra.UseVisualStyleBackColor = true;
-            btnAgregarCompra.Click += btnAgregarCompra_Click;
+            btnAgregarCompra.Click += btnAgregarwComprar_Click;
+            // 
+            // btnAgregarVenta
+            // 
+            btnAgregarVenta.Location = new Point(230, 161);
+            btnAgregarVenta.Name = "btnAgregarVenta";
+            btnAgregarVenta.Size = new Size(110, 23);
+            btnAgregarVenta.TabIndex = 13;
+            btnAgregarVenta.Text = "Actualizar Venta";
+            btnAgregarVenta.UseVisualStyleBackColor = true;
+            btnAgregarVenta.Click += btnAgregarCompra_Click;
             // 
             // SchoolShopInventarioWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnAgregarVenta);
             Controls.Add(btnAgregarCompra);
-            Controls.Add(btnAgregarwComprar);
             Controls.Add(ListaInventario);
             Controls.Add(btnMostrarInventario);
             Controls.Add(btnBuscar);
@@ -195,7 +195,7 @@
         private Button btnBuscar;
         private Button btnMostrarInventario;
         private ListView ListaInventario;
-        private Button btnAgregarwComprar;
         private Button btnAgregarCompra;
+        private Button btnAgregarVenta;
     }
 }
