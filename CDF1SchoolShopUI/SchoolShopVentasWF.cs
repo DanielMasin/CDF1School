@@ -7,26 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CDF1SchoolShopEN;
-using CDF1SchoolShopBL;
+using CDF1SchoolShopEN;// Importa el espacio de nombres para las clases de entidades
+using CDF1SchoolShopBL; // Importa el espacio de nombres para la lógica de negocio.
 
-namespace CDF1SchoolShopUI
+namespace CDF1SchoolShopUI // Define el espacio de nombres del formulario.
 {
-    public partial class SchoolShopVentasWF : Form
+    public partial class SchoolShopVentasWF : Form// Declaración de la clase SchoolShopVentasWF que hereda de Form.
     {
-        int indice = 0;
-        double Precio = 0;
-        double ventatotal = 0;
-        public SchoolShopVentasWF()
+        int indice = 0;// Variable para almacenar el índice seleccionado en el ComboBox.
+        double Precio = 0;// Variable para almacenar el precio del producto seleccionado.
+        double ventatotal = 0;// Variable para almacenar el total de la venta.
+        public SchoolShopVentasWF()// Constructor de la clase SchoolShopVentasWF.
         {
-            InitializeComponent();
+            InitializeComponent();// Inicializa los componentes del formulario.
         }
 
 
-        private void cbProducto_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbProducto_SelectedIndexChanged(object sender, EventArgs e)// Manejador de evento para el cambio de selección en el ComboBox de productos.
         {
-            indice = cbProducto.SelectedIndex;
-            switch (indice)
+            indice = cbProducto.SelectedIndex;// Obtiene el índice seleccionado en el ComboBox.
+            switch (indice)// Asigna el precio del producto seleccionado según el índice
             {
                 case 1:
                     Precio = 0.25;
@@ -86,13 +86,14 @@ namespace CDF1SchoolShopUI
                     Precio = 0.85;
                     break;
             }
-            txtPrecio.Text = Precio.ToString();
-        }
+            txtPrecio.Text = Precio.ToString();// Muestra el precio en el TextBox de precio.
+        
+    }
 
-        private void SchoolShopVentasWF_Load(object sender, EventArgs e)
+        private void SchoolShopVentasWF_Load(object sender, EventArgs e)// Manejador de evento Load del formulario.
         {
-            txtPrecio.Enabled = false;
-            //llenar combo
+            txtPrecio.Enabled = false;// Deshabilita la edición del TextBox de precio.
+            // Llena el ComboBox de productos con opciones.
             cbProducto.Items.Add("Seleccione producto");
             cbProducto.Items.Add("Regla");
             cbProducto.Items.Add("Lapicero");
@@ -113,39 +114,39 @@ namespace CDF1SchoolShopUI
             cbProducto.Items.Add("Hoja de foami brillante");
             cbProducto.Items.Add("Corrector");
             cbProducto.Items.Add("Tirro");
-            cbProducto.SelectedIndex = 0;
+            cbProducto.SelectedIndex = 0;// Establece la selección inicial en "Seleccione producto".
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void btnAgregar_Click(object sender, EventArgs e)// Manejador de evento para el botón Agregar.
         {
-            var VentasEN = new VentasEN
+            var VentasEN = new VentasEN// Crea una nueva instancia de la clase VentasEN con los datos del formulario.
             {
-                Producto = cbProducto.Text,
-                Cantidad = txtCantidad.Text,
-                Precio = Precio.ToString(),
+                Producto = cbProducto.Text,// Obtiene el producto seleccionado en el ComboBox.
+                Cantidad = txtCantidad.Text,// Obtiene la cantidad ingresada en el TextBox de cantidad.
+                Precio = Precio.ToString(),// Convierte el precio a cadena y lo asigna.
 
             };
 
-            if (VentasEN != null)
+            if (VentasEN != null)// Verifica que la instancia de VentasEN no sea nula.
             {
-                var VentasBL = new VentasBL();
-                VentasBL.GuardarVentasEN(VentasEN);
-                var ListVentasBL = VentasBL.ObtenerTodosVentasEN();
-                dgSchoolShop.DataSource = null;
-                dgSchoolShop.DataSource = ListVentasBL;
+                var VentasBL = new VentasBL();// Crea una instancia de la clase de lógica de negocio para ventas.
+                VentasBL.GuardarVentasEN(VentasEN);// Guarda la venta en la base de datos.
+                var ListVentasBL = VentasBL.ObtenerTodosVentasEN();// Obtiene todas las ventas de la base de datos.
+                dgSchoolShop.DataSource = null;// Limpia los datos en el DataGridView.
+                dgSchoolShop.DataSource = ListVentasBL;// Asigna la lista de ventas como origen de datos del DataGridView.
 
                 //calcular y mostrar el total de precio por cantidad 
                 Total();
             }
 
         }
-        private void Total()
+        private void Total()// Método para calcular el total de precio por cantidad y mostrarlo en el DataGridView.
         {
-            foreach (DataGridViewRow row in dgSchoolShop.Rows)
+            foreach (DataGridViewRow row in dgSchoolShop.Rows) // Itera sobre todas las filas del DataGridView.
             {
                 //obtener el precio de la fila actual 
-                double Precio = Convert.ToDouble(row.Cells["Precio"].Value);
-                int Cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value);
+                double Precio = Convert.ToDouble(row.Cells["Precio"].Value);// Obtiene el precio de la fila actual.
+                int Cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value);// Obtiene la cantidad de la fila actual.
 
                 //Calcular el total de precio por cantidad
                 double Total = Precio * Cantidad;
@@ -156,33 +157,33 @@ namespace CDF1SchoolShopUI
 
         private void btnVentaCompleta_Click(object sender, EventArgs e)
         {
-            VentaTotal();
+            VentaTotal();// Llama al método VentaTotal cuando se hace clic en el botón de Venta Completa.
         }
         private void VentaTotal()
         {
-            double Total = 0.0;
+            double Total = 0.0; // Inicializa la variable Total para almacenar el total de la venta.
 
             foreach (DataGridViewRow row in dgSchoolShop.Rows)
-            {
+            {// Itera sobre todas las filas del DataGridView.
                 double Precio = Convert.ToDouble(row.Cells["Precio"].Value);
                 double Cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value);
 
-                Total += Precio * Cantidad;
-            }
+                Total += Precio * Cantidad; // Calcula el total de la venta sumando el precio por la cantidad de cada producto.
+            }// Muestra un mensaje de venta completada con el total de la compra formateado como moneda.
             MessageBox.Show("¡Venta Completada!\n\nSu total de compra es " + Total.ToString("c"), "Venta Completada");
         }
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            cbProducto.SelectedIndex = 0;
-            txtCantidad.Text = "";
-            txtPrecio.Text = "";
+            cbProducto.SelectedIndex = 0;// Establece la selección del ComboBox de productos en la primera opción.
+            txtCantidad.Text = "";// Limpia el contenido del TextBox de cantidad.
+            txtPrecio.Text = "";// Limpia el contenido del TextBox de precio.
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            SchoolShopMenuWF MenuFormulario = new SchoolShopMenuWF();
-            MenuFormulario.Show();
-            this.Close();
+            SchoolShopMenuWF MenuFormulario = new SchoolShopMenuWF(); // Crea una nueva instancia del formulario de menú principal
+            MenuFormulario.Show();// Muestra el formulario de menú principal
+            this.Close();// Cierra el formulario actual.
         }
 
         private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
@@ -190,6 +191,7 @@ namespace CDF1SchoolShopUI
             if  (!Char.IsControl(e.KeyChar) && !Char.IsDigit(e.KeyChar))
             {
                 //Si la tecla presionada no es un numero y no es una tecla de control (Como retroceso o suprimir), se cancela la accion.
+                // Si es así, cancela la acción de escribir en el TextBox de cantidad.
                 e.Handled = true;
             }
         }
