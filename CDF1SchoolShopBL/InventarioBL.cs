@@ -11,7 +11,6 @@ namespace CDF1SchoolShopBL
     internal class InventarioBL
     {
         private InventarioDAL InventarioDAL = new InventarioDAL();
-
         public void GuardarInventarioEN(InventarioEN pInventarioEN)
         {
             InventarioDAL.GuardarInventarioEN(pInventarioEN);

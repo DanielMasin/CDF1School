@@ -10,9 +10,10 @@ namespace CDF1SchoolShopEN
     public class InventarioEN
     {
         public int Id { get; set; }
-        public string Agregar { get; set; }
-        public string Salida { get; set; }
-        public string Tipo { get; set; }
-        public string Precio { get; set; }
+        public string Codigo { get; set; }
+        public string Preciounitario { get; set; }
+        public string Marca { get; set; }
+        public string Producto { get; set; }
+        public string Inversioneninventario { get; set; }
     }
 }
