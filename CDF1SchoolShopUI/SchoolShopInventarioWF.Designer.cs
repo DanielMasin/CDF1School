@@ -145,7 +145,7 @@
             btnAgregarCompra.TabIndex = 12;
             btnAgregarCompra.Text = "Actualizar Comprar";
             btnAgregarCompra.UseVisualStyleBackColor = true;
-            btnAgregarCompra.Click += btnAgregarwComprar_Click;
+            
             // 
             // btnAgregarVenta
             // 
