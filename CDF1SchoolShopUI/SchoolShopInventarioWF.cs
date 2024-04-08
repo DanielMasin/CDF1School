@@ -20,7 +20,7 @@ namespace CDF1SchoolShopUI
             inventarioDAL = new InventarioDAL();//instancia de DAL
         }
 
-        
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -39,6 +39,27 @@ namespace CDF1SchoolShopUI
             ListaInventario.Columns.Add("Inversion en inventario", 5, 000);
         }
 
-        
+        private void SchoolShopInventarioWF_Load(object sender, EventArgs e)
+        {
+            cbProducto.Items.Add("Reglas");
+            cbProducto.Items.Add("Lapiceros");
+            cbProducto.Items.Add("Lapiz");
+            cbProducto.Items.Add("Borradores Grandes");
+            cbProducto.Items.Add("Sacapunta de metal");
+            cbProducto.Items.Add("Pliegos de cartulina");
+            cbProducto.Items.Add("Resma Papel bond");
+            cbProducto.Items.Add("Fastener Plastico");
+            cbProducto.Items.Add("Tijeras");
+            cbProducto.Items.Add("Cuaderno#1 Espiral");
+            cbProducto.Items.Add("Cuaderno #3");
+            cbProducto.Items.Add("Caja de colores 12U");
+            cbProducto.Items.Add("Caja de colores 24U");
+            cbProducto.Items.Add("Plumones");
+            cbProducto.Items.Add("Silicon Liquido");
+            cbProducto.Items.Add("Hojas de foami");
+            cbProducto.Items.Add("Hojas de foami brillantes");
+            cbProducto.Items.Add("Corrector");
+            cbProducto.Items.Add("Tirro");
+        }
     }
 }

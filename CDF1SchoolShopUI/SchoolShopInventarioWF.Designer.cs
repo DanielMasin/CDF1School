@@ -152,7 +152,7 @@
             Controls.Add(label1);
             Name = "SchoolShopInventarioWF";
             Text = "SchoolShopInventarioWF";
-            
+            Load += SchoolShopInventarioWF_Load;
             ResumeLayout(false);
             PerformLayout();
         }
