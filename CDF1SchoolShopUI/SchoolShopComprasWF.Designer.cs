@@ -43,6 +43,7 @@
             btnAgregar = new Button();
             panel1 = new Panel();
             txtCantidad = new TextBox();
+            btnAtras = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -163,11 +164,22 @@
             txtCantidad.TabIndex = 11;
             txtCantidad.TextChanged += txtCantidad_TextChanged;
             // 
+            // btnAtras
+            // 
+            btnAtras.Location = new Point(680, 407);
+            btnAtras.Name = "btnAtras";
+            btnAtras.Size = new Size(75, 23);
+            btnAtras.TabIndex = 12;
+            btnAtras.Text = "Atras";
+            btnAtras.UseVisualStyleBackColor = true;
+            btnAtras.Click += btnAtras_Click;
+            // 
             // SchoolShopComprasWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnAtras);
             Controls.Add(txtCantidad);
             Controls.Add(panel1);
             Controls.Add(btnAgregar);
@@ -203,5 +215,6 @@
         private Button btnAgregar;
         private Panel panel1;
         private TextBox txtCantidad;
+        private Button btnAtras;
     }
 }

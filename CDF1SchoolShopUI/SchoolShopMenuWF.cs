@@ -24,7 +24,26 @@ namespace CDF1SchoolShopUI
             this.Close();
         }
 
+        private void agregarProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SchoolShopProveedoresWF ProveedorFormulario = new SchoolShopProveedoresWF();
+            ProveedorFormulario.Show();
+            this.Close();
+        }
 
+        private void comprasAProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SchoolShopComprasWF ComprasFormulario = new SchoolShopComprasWF();
+            ComprasFormulario.Show();
+            this.Close();
+        }
+
+        private void ventasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            SchoolShopVentasWF VentasFormulario = new SchoolShopVentasWF();
+            VentasFormulario.Show();
+            this.Close();
+        }
     }
 }
 

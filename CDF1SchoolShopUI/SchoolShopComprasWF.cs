@@ -54,5 +54,12 @@ namespace CDF1SchoolShopUI
         {
 
         }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            SchoolShopMenuWF MenuFormulario = new SchoolShopMenuWF();
+            MenuFormulario.Show();
+            this.Close();
+        }
     }
 }
