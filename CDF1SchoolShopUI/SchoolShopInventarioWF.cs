@@ -1,4 +1,5 @@
 ﻿using CDF1SchoolShopDAL;
+using CDF1SchoolShopEN;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,9 +21,6 @@ namespace CDF1SchoolShopUI
             inventarioDAL = new InventarioDAL();//instancia de DAL
         }
 
-
-
-       
 
         private void ListaInventario_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -71,8 +69,51 @@ namespace CDF1SchoolShopUI
                 string marca = txtMarca.Text;
                 string producto = cbProducto.SelectedItem.ToString();
 
-
             }
+        }
+
+        private void btnMostrarInventario_Click(object sender, EventArgs e)
+        {
+            List<InventarioEN> inventario = inventarioDAL.ObtenerTodosInventarioEN();//Obtener datos de dal
+
+            ListaInventario.Items.Clear();
+
+            foreach (InventarioEN producto in inventario)
+            {
+                ListViewItem item = new ListViewItem(producto.Codigo.ToString());
+                item.SubItems.Add(producto.Producto.ToString());
+                item.SubItems.Add(producto.Marca.ToString());
+                item.SubItems.Add(producto.Preciounitario.ToString());
+                item.SubItems.Add(producto.Inversioneninventario.ToString());
+
+                ListaInventario.Items.Add(item);
+            }
+
+        }
+
+        private void btnAgregarwComprar_Click(object sender, EventArgs e)
+        {
+            //Obten el codigo y cantidad de clase de compras
+            int Codigo = int.Parse(txtCodigo.Text);
+            int Cantidad = int.Parse(txtCantidad).Text);
+
+            //Agregar compra al inventario
+            //btnAgregarCompra(Codigo.Cantidad);
+
+            //Actualizar el listView
+            //ActualizarListaInventario();
+        }
+
+        private void btnAgregarCompra_Click(object sender, EventArgs e)
+        {
+            int Codigo = int.Parse(txtCodigo.Text);
+            int cantidad = int.Parse(txtCantidad.Text);
+
+            // Agrega la venta al inventario
+            //AgregarVenta(codigo, cantidad);
+
+            // Actualiza el ListView
+            //ActualizarListView();
         }
     }
 }

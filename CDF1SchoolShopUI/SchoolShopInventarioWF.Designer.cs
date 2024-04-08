@@ -39,6 +39,8 @@
             btnBuscar = new Button();
             btnMostrarInventario = new Button();
             ListaInventario = new ListView();
+            btnAgregarwComprar = new Button();
+            btnAgregarCompra = new Button();
             SuspendLayout();
             // 
             // label1
@@ -53,7 +55,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(62, 98);
+            label2.Location = new Point(62, 84);
             label2.Name = "label2";
             label2.Size = new Size(85, 15);
             label2.TabIndex = 1;
@@ -62,7 +64,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(53, 156);
+            label3.Location = new Point(475, 84);
             label3.Name = "label3";
             label3.Size = new Size(40, 15);
             label3.TabIndex = 2;
@@ -86,14 +88,14 @@
             // 
             // txtMarca
             // 
-            txtMarca.Location = new Point(167, 156);
+            txtMarca.Location = new Point(543, 81);
             txtMarca.Name = "txtMarca";
             txtMarca.Size = new Size(245, 23);
             txtMarca.TabIndex = 6;
             // 
             // txtPrecio
             // 
-            txtPrecio.Location = new Point(176, 98);
+            txtPrecio.Location = new Point(176, 76);
             txtPrecio.Name = "txtPrecio";
             txtPrecio.Size = new Size(245, 23);
             txtPrecio.TabIndex = 7;
@@ -108,7 +110,7 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(517, 139);
+            btnBuscar.Location = new Point(584, 161);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(75, 23);
             btnBuscar.TabIndex = 9;
@@ -118,13 +120,13 @@
             // 
             // btnMostrarInventario
             // 
-            btnMostrarInventario.Location = new Point(643, 139);
+            btnMostrarInventario.Location = new Point(402, 161);
             btnMostrarInventario.Name = "btnMostrarInventario";
             btnMostrarInventario.Size = new Size(129, 23);
             btnMostrarInventario.TabIndex = 10;
             btnMostrarInventario.Text = "Mostrar Inventario";
             btnMostrarInventario.UseVisualStyleBackColor = true;
-            
+            btnMostrarInventario.Click += btnMostrarInventario_Click;
             // 
             // ListaInventario
             // 
@@ -135,11 +137,33 @@
             ListaInventario.UseCompatibleStateImageBehavior = false;
             ListaInventario.SelectedIndexChanged += ListaInventario_SelectedIndexChanged;
             // 
+            // btnAgregarwComprar
+            // 
+            btnAgregarwComprar.Location = new Point(62, 161);
+            btnAgregarwComprar.Name = "btnAgregarwComprar";
+            btnAgregarwComprar.Size = new Size(129, 23);
+            btnAgregarwComprar.TabIndex = 12;
+            btnAgregarwComprar.Text = "Actualizar Comprar";
+            btnAgregarwComprar.UseVisualStyleBackColor = true;
+            btnAgregarwComprar.Click += btnAgregarwComprar_Click;
+            // 
+            // btnAgregarCompra
+            // 
+            btnAgregarCompra.Location = new Point(230, 161);
+            btnAgregarCompra.Name = "btnAgregarCompra";
+            btnAgregarCompra.Size = new Size(110, 23);
+            btnAgregarCompra.TabIndex = 13;
+            btnAgregarCompra.Text = "Actualizar Venta";
+            btnAgregarCompra.UseVisualStyleBackColor = true;
+            btnAgregarCompra.Click += btnAgregarCompra_Click;
+            // 
             // SchoolShopInventarioWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnAgregarCompra);
+            Controls.Add(btnAgregarwComprar);
             Controls.Add(ListaInventario);
             Controls.Add(btnMostrarInventario);
             Controls.Add(btnBuscar);
@@ -171,5 +195,7 @@
         private Button btnBuscar;
         private Button btnMostrarInventario;
         private ListView ListaInventario;
+        private Button btnAgregarwComprar;
+        private Button btnAgregarCompra;
     }
 }
