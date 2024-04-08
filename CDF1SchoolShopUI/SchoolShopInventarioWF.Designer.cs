@@ -38,7 +38,7 @@
             cbProducto = new ComboBox();
             button1 = new Button();
             button2 = new Button();
-            listView1 = new ListView();
+            ListaInventario = new ListView();
             SuspendLayout();
             // 
             // label1
@@ -125,20 +125,21 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // listView1
+            // ListaInventario
             // 
-            listView1.Location = new Point(62, 206);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(710, 201);
-            listView1.TabIndex = 11;
-            listView1.UseCompatibleStateImageBehavior = false;
+            ListaInventario.Location = new Point(62, 206);
+            ListaInventario.Name = "ListaInventario";
+            ListaInventario.Size = new Size(710, 201);
+            ListaInventario.TabIndex = 11;
+            ListaInventario.UseCompatibleStateImageBehavior = false;
+            ListaInventario.SelectedIndexChanged += ListaInventario_SelectedIndexChanged;
             // 
             // SchoolShopInventarioWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(listView1);
+            Controls.Add(ListaInventario);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(cbProducto);
@@ -151,6 +152,7 @@
             Controls.Add(label1);
             Name = "SchoolShopInventarioWF";
             Text = "SchoolShopInventarioWF";
+            
             ResumeLayout(false);
             PerformLayout();
         }
@@ -167,6 +169,6 @@
         private ComboBox cbProducto;
         private Button button1;
         private Button button2;
-        private ListView listView1;
+        private ListView ListaInventario;
     }
 }
