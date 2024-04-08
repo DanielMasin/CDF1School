@@ -17,14 +17,14 @@ namespace CDF1SchoolShopUI
             InitializeComponent();
         }
 
-        private void agregarProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AgregarProductosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SchoolShopAgregarWF AgregarFormulario = new SchoolShopAgregarWF();
             AgregarFormulario.Show();
             this.Close();
         }
 
-        private void agregarProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AgregarProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SchoolShopProveedoresWF ProveedoresFormulario = new SchoolShopProveedoresWF();
             ProveedoresFormulario.Show();
