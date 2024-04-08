@@ -87,8 +87,8 @@ namespace CDF1SchoolShopUI // Define el espacio de nombres del formulario.
                     break;
             }
             txtPrecio.Text = Precio.ToString();// Muestra el precio en el TextBox de precio.
-        
-    }
+
+        }
 
         private void SchoolShopVentasWF_Load(object sender, EventArgs e)// Manejador de evento Load del formulario.
         {
@@ -188,11 +188,20 @@ namespace CDF1SchoolShopUI // Define el espacio de nombres del formulario.
 
         private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if  (!Char.IsControl(e.KeyChar) && !Char.IsDigit(e.KeyChar))
+            if (!Char.IsControl(e.KeyChar) && !Char.IsDigit(e.KeyChar))
             {
                 //Si la tecla presionada no es un numero y no es una tecla de control (Como retroceso o suprimir), se cancela la accion.
                 // Si es así, cancela la acción de escribir en el TextBox de cantidad.
                 e.Handled = true;
+            }
+        }
+        public class VentasForm : Form 
+        {
+            public event EventHandler VentaCompleta;
+
+            private void btnVentaCompleta_Click(object sender, EventArgs e)
+            {
+                VentaCompleta?.Invoke(this, EventArgs.Empty);
             }
         }
     }
