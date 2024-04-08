@@ -28,9 +28,8 @@ namespace CDF1SchoolShopUI
             {
                 MessageBox.Show("¡Inicio de sesión exitoso!");
 
-                SchoolShopMenuWF MenuFormulario = new SchoolShopMenuWF();
-                MenuFormulario.Show();
-
+                
+                
             }
             else
             {
