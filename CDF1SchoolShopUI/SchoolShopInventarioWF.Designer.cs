@@ -37,7 +37,7 @@
             txtPrecio = new TextBox();
             cbProducto = new ComboBox();
             btnBuscar = new Button();
-            button2 = new Button();
+            btnMostrarInventario = new Button();
             ListaInventario = new ListView();
             SuspendLayout();
             // 
@@ -116,15 +116,15 @@
             btnBuscar.UseVisualStyleBackColor = true;
             btnBuscar.Click += btnBuscar_Click;
             // 
-            // button2
+            // btnMostrarInventario
             // 
-            button2.Location = new Point(643, 139);
-            button2.Name = "button2";
-            button2.Size = new Size(129, 23);
-            button2.TabIndex = 10;
-            button2.Text = "Mostrar Inventario";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnMostrarInventario.Location = new Point(643, 139);
+            btnMostrarInventario.Name = "btnMostrarInventario";
+            btnMostrarInventario.Size = new Size(129, 23);
+            btnMostrarInventario.TabIndex = 10;
+            btnMostrarInventario.Text = "Mostrar Inventario";
+            btnMostrarInventario.UseVisualStyleBackColor = true;
+            
             // 
             // ListaInventario
             // 
@@ -141,7 +141,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(ListaInventario);
-            Controls.Add(button2);
+            Controls.Add(btnMostrarInventario);
             Controls.Add(btnBuscar);
             Controls.Add(cbProducto);
             Controls.Add(txtPrecio);
@@ -169,7 +169,7 @@
         private TextBox txtPrecio;
         private ComboBox cbProducto;
         private Button btnBuscar;
-        private Button button2;
+        private Button btnMostrarInventario;
         private ListView ListaInventario;
     }
 }

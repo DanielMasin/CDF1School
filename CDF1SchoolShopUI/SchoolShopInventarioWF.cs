@@ -22,10 +22,7 @@ namespace CDF1SchoolShopUI
 
 
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void ListaInventario_SelectedIndexChanged(object sender, EventArgs e)
         {
