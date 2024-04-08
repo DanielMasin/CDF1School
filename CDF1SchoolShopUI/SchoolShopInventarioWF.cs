@@ -61,5 +61,21 @@ namespace CDF1SchoolShopUI
             cbProducto.Items.Add("Corrector");
             cbProducto.Items.Add("Tirro");
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtCodigo.Text) &&
+                !string.IsNullOrWhiteSpace(txtPrecio.Text) &&
+                !string.IsNullOrWhiteSpace(txtMarca.Text) &&
+                cbProducto.SelectedIndex != -1)
+            {
+                int codigo = int.Parse(txtCodigo.Text);
+                decimal precio = decimal.Parse(txtPrecio.Text);
+                string marca = txtMarca.Text;
+                string producto = cbProducto.SelectedItem.ToString();
+
+
+            }
+        }
     }
 }

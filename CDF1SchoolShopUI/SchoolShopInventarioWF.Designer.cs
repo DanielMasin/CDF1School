@@ -32,11 +32,11 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            txtCodigo = new TextBox();
+            txtMarca = new TextBox();
+            txtPrecio = new TextBox();
             cbProducto = new ComboBox();
-            button1 = new Button();
+            btnBuscar = new Button();
             button2 = new Button();
             ListaInventario = new ListView();
             SuspendLayout();
@@ -77,26 +77,26 @@
             label4.TabIndex = 3;
             label4.Text = "Producto";
             // 
-            // textBox1
+            // txtCodigo
             // 
-            textBox1.Location = new Point(176, 29);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(245, 23);
-            textBox1.TabIndex = 4;
+            txtCodigo.Location = new Point(176, 29);
+            txtCodigo.Name = "txtCodigo";
+            txtCodigo.Size = new Size(245, 23);
+            txtCodigo.TabIndex = 4;
             // 
-            // textBox3
+            // txtMarca
             // 
-            textBox3.Location = new Point(167, 156);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(245, 23);
-            textBox3.TabIndex = 6;
+            txtMarca.Location = new Point(167, 156);
+            txtMarca.Name = "txtMarca";
+            txtMarca.Size = new Size(245, 23);
+            txtMarca.TabIndex = 6;
             // 
-            // textBox4
+            // txtPrecio
             // 
-            textBox4.Location = new Point(176, 98);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(245, 23);
-            textBox4.TabIndex = 7;
+            txtPrecio.Location = new Point(176, 98);
+            txtPrecio.Name = "txtPrecio";
+            txtPrecio.Size = new Size(245, 23);
+            txtPrecio.TabIndex = 7;
             // 
             // cbProducto
             // 
@@ -106,14 +106,15 @@
             cbProducto.Size = new Size(245, 23);
             cbProducto.TabIndex = 8;
             // 
-            // button1
+            // btnBuscar
             // 
-            button1.Location = new Point(517, 139);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 9;
-            button1.Text = "Buscar";
-            button1.UseVisualStyleBackColor = true;
+            btnBuscar.Location = new Point(517, 139);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(75, 23);
+            btnBuscar.TabIndex = 9;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // button2
             // 
@@ -141,11 +142,11 @@
             ClientSize = new Size(800, 450);
             Controls.Add(ListaInventario);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnBuscar);
             Controls.Add(cbProducto);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox1);
+            Controls.Add(txtPrecio);
+            Controls.Add(txtMarca);
+            Controls.Add(txtCodigo);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -163,11 +164,11 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox txtCodigo;
+        private TextBox txtMarca;
+        private TextBox txtPrecio;
         private ComboBox cbProducto;
-        private Button button1;
+        private Button btnBuscar;
         private Button button2;
         private ListView ListaInventario;
     }
