@@ -116,7 +116,7 @@ namespace CDF1SchoolShopUI
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            SchoolShopMenuWF MenuFormulario = new SchoolShopMenuWF();
+            SchoolShop1MenuWF MenuFormulario = new SchoolShop1MenuWF();
             MenuFormulario.Show();
             this.Close();
         }

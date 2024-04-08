@@ -181,7 +181,7 @@ namespace CDF1SchoolShopUI // Define el espacio de nombres del formulario.
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            SchoolShopMenuWF MenuFormulario = new SchoolShopMenuWF(); // Crea una nueva instancia del formulario de menú principal
+            SchoolShop1MenuWF MenuFormulario = new SchoolShop1MenuWF(); // Crea una nueva instancia del formulario de menú principal
             MenuFormulario.Show();// Muestra el formulario de menú principal
             this.Close();// Cierra el formulario actual.
         }
