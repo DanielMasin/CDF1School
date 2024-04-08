@@ -60,7 +60,7 @@
             agregarProductosToolStripMenuItem.Name = "agregarProductosToolStripMenuItem";
             agregarProductosToolStripMenuItem.Size = new Size(173, 22);
             agregarProductosToolStripMenuItem.Text = "Agregar Productos";
-            agregarProductosToolStripMenuItem.Click += agregarProductosToolStripMenuItem_Click;
+            agregarProductosToolStripMenuItem.Click += AgregarProductosToolStripMenuItem_Click;
             // 
             // proveedoresToolStripMenuItem
             // 
@@ -74,14 +74,14 @@
             agregarProveedoresToolStripMenuItem.Name = "agregarProveedoresToolStripMenuItem";
             agregarProveedoresToolStripMenuItem.Size = new Size(199, 22);
             agregarProveedoresToolStripMenuItem.Text = "Agregar Proveedores";
-            agregarProveedoresToolStripMenuItem.Click += agregarProveedoresToolStripMenuItem_Click;
+            agregarProveedoresToolStripMenuItem.Click += AgregarProveedoresToolStripMenuItem_Click;
             // 
             // comprasAProveedoresToolStripMenuItem
             // 
             comprasAProveedoresToolStripMenuItem.Name = "comprasAProveedoresToolStripMenuItem";
             comprasAProveedoresToolStripMenuItem.Size = new Size(199, 22);
             comprasAProveedoresToolStripMenuItem.Text = "Compras a Proveedores";
-            comprasAProveedoresToolStripMenuItem.Click += comprasAProveedoresToolStripMenuItem_Click;
+            comprasAProveedoresToolStripMenuItem.Click += ComprasAProveedoresToolStripMenuItem_Click;
             // 
             // ventasToolStripMenuItem
             // 
@@ -95,7 +95,7 @@
             ventasToolStripMenuItem1.Name = "ventasToolStripMenuItem1";
             ventasToolStripMenuItem1.Size = new Size(180, 22);
             ventasToolStripMenuItem1.Text = "Ventas";
-            ventasToolStripMenuItem1.Click += ventasToolStripMenuItem1_Click;
+            ventasToolStripMenuItem1.Click += VentasToolStripMenuItem1_Click;
             // 
             // SchoolShop1MenuWF
             // 
