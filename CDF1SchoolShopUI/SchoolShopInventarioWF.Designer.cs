@@ -29,12 +29,10 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             txtCodigo = new TextBox();
             txtMarca = new TextBox();
-            txtPrecio = new TextBox();
             cbProducto = new ComboBox();
             btnBuscar = new Button();
             btnMostrarInventario = new Button();
@@ -46,25 +44,16 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(62, 37);
+            label1.Location = new Point(108, 37);
             label1.Name = "label1";
             label1.Size = new Size(46, 15);
             label1.TabIndex = 0;
             label1.Text = "Codigo";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(62, 84);
-            label2.Name = "label2";
-            label2.Size = new Size(85, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Precio Unitario";
-            // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(475, 84);
+            label3.Location = new Point(108, 79);
             label3.Name = "label3";
             label3.Size = new Size(40, 15);
             label3.TabIndex = 2;
@@ -73,7 +62,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(475, 37);
+            label4.Location = new Point(450, 37);
             label4.Name = "label4";
             label4.Size = new Size(56, 15);
             label4.TabIndex = 3;
@@ -88,22 +77,15 @@
             // 
             // txtMarca
             // 
-            txtMarca.Location = new Point(543, 81);
+            txtMarca.Location = new Point(176, 76);
             txtMarca.Name = "txtMarca";
             txtMarca.Size = new Size(245, 23);
             txtMarca.TabIndex = 6;
             // 
-            // txtPrecio
-            // 
-            txtPrecio.Location = new Point(176, 76);
-            txtPrecio.Name = "txtPrecio";
-            txtPrecio.Size = new Size(245, 23);
-            txtPrecio.TabIndex = 7;
-            // 
             // cbProducto
             // 
             cbProducto.FormattingEnabled = true;
-            cbProducto.Location = new Point(537, 29);
+            cbProducto.Location = new Point(512, 29);
             cbProducto.Name = "cbProducto";
             cbProducto.Size = new Size(245, 23);
             cbProducto.TabIndex = 8;
@@ -145,7 +127,6 @@
             btnAgregarCompra.TabIndex = 12;
             btnAgregarCompra.Text = "Actualizar Comprar";
             btnAgregarCompra.UseVisualStyleBackColor = true;
-            
             // 
             // btnAgregarVenta
             // 
@@ -168,12 +149,10 @@
             Controls.Add(btnMostrarInventario);
             Controls.Add(btnBuscar);
             Controls.Add(cbProducto);
-            Controls.Add(txtPrecio);
             Controls.Add(txtMarca);
             Controls.Add(txtCodigo);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
             Name = "SchoolShopInventarioWF";
             Text = "SchoolShopInventarioWF";
@@ -185,12 +164,10 @@
         #endregion
 
         private Label label1;
-        private Label label2;
         private Label label3;
         private Label label4;
         private TextBox txtCodigo;
         private TextBox txtMarca;
-        private TextBox txtPrecio;
         private ComboBox cbProducto;
         private Button btnBuscar;
         private Button btnMostrarInventario;
