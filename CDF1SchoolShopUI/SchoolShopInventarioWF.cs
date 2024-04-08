@@ -113,5 +113,12 @@ namespace CDF1SchoolShopUI
             // Actualiza el ListView
             ActualizarListView();
         }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            SchoolShopMenuWF MenuFormulario = new SchoolShopMenuWF();
+            MenuFormulario.Show();
+            this.Close();
+        }
     }
 }

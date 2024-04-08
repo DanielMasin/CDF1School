@@ -39,6 +39,7 @@
             ListaInventario = new ListView();
             btnAgregarCompra = new Button();
             btnAgregarVenta = new Button();
+            btnAtras = new Button();
             SuspendLayout();
             // 
             // label1
@@ -92,7 +93,7 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(584, 161);
+            btnBuscar.Location = new Point(565, 161);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(75, 23);
             btnBuscar.TabIndex = 9;
@@ -102,7 +103,7 @@
             // 
             // btnMostrarInventario
             // 
-            btnMostrarInventario.Location = new Point(402, 161);
+            btnMostrarInventario.Location = new Point(388, 161);
             btnMostrarInventario.Name = "btnMostrarInventario";
             btnMostrarInventario.Size = new Size(129, 23);
             btnMostrarInventario.TabIndex = 10;
@@ -138,11 +139,22 @@
             btnAgregarVenta.UseVisualStyleBackColor = true;
             btnAgregarVenta.Click += btnAgregarCompra_Click;
             // 
+            // btnAtras
+            // 
+            btnAtras.Location = new Point(682, 161);
+            btnAtras.Name = "btnAtras";
+            btnAtras.Size = new Size(75, 23);
+            btnAtras.TabIndex = 14;
+            btnAtras.Text = "Atras";
+            btnAtras.UseVisualStyleBackColor = true;
+            btnAtras.Click += btnAtras_Click;
+            // 
             // SchoolShopInventarioWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnAtras);
             Controls.Add(btnAgregarVenta);
             Controls.Add(btnAgregarCompra);
             Controls.Add(ListaInventario);
@@ -174,5 +186,6 @@
         private ListView ListaInventario;
         private Button btnAgregarCompra;
         private Button btnAgregarVenta;
+        private Button btnAtras;
     }
 }
