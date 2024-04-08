@@ -33,7 +33,6 @@
             label3 = new Label();
             label4 = new Label();
             cbProducto = new ComboBox();
-            cbCantidad = new ComboBox();
             cbProveedor = new ComboBox();
             cbCosto = new ComboBox();
             dataGridView1 = new DataGridView();
@@ -43,6 +42,7 @@
             Costo = new DataGridViewTextBoxColumn();
             btnAgregar = new Button();
             panel1 = new Panel();
+            txtCantidad = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -91,14 +91,6 @@
             cbProducto.Size = new Size(160, 23);
             cbProducto.TabIndex = 4;
             cbProducto.SelectedIndexChanged += cbProducto_SelectedIndexChanged;
-            // 
-            // cbCantidad
-            // 
-            cbCantidad.FormattingEnabled = true;
-            cbCantidad.Location = new Point(144, 92);
-            cbCantidad.Name = "cbCantidad";
-            cbCantidad.Size = new Size(160, 23);
-            cbCantidad.TabIndex = 5;
             // 
             // cbProveedor
             // 
@@ -163,17 +155,25 @@
             panel1.Size = new Size(801, 34);
             panel1.TabIndex = 10;
             // 
+            // txtCantidad
+            // 
+            txtCantidad.Location = new Point(143, 92);
+            txtCantidad.Name = "txtCantidad";
+            txtCantidad.Size = new Size(161, 23);
+            txtCantidad.TabIndex = 11;
+            txtCantidad.TextChanged += txtCantidad_TextChanged;
+            // 
             // SchoolShopComprasWF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtCantidad);
             Controls.Add(panel1);
             Controls.Add(btnAgregar);
             Controls.Add(dataGridView1);
             Controls.Add(cbCosto);
             Controls.Add(cbProveedor);
-            Controls.Add(cbCantidad);
             Controls.Add(cbProducto);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -193,7 +193,6 @@
         private Label label3;
         private Label label4;
         private ComboBox cbProducto;
-        private ComboBox cbCantidad;
         private ComboBox cbProveedor;
         private ComboBox cbCosto;
         private DataGridView dataGridView1;
@@ -203,5 +202,6 @@
         private DataGridViewTextBoxColumn Costo;
         private Button btnAgregar;
         private Panel panel1;
+        private TextBox txtCantidad;
     }
 }

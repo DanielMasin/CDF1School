@@ -8,10 +8,9 @@ using CDF1SchoolShopDAL;
 
 namespace CDF1SchoolShopBL
 {
-    internal class InventarioBL
+    public class InventarioBL
     {
         private InventarioDAL InventarioDAL = new InventarioDAL();
-
         public void GuardarInventarioEN(InventarioEN pInventarioEN)
         {
             InventarioDAL.GuardarInventarioEN(pInventarioEN);
